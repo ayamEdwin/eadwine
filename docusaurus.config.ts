@@ -6,8 +6,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'DarkLight',
-  tagline: 'Where embedded system development and learning comes to light!',
-  favicon: 'img/favicon.ico',
+  tagline: 'The Embedded Platform for Learning and Rapid Prototyping',
+  favicon: 'img/darklight.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -76,21 +76,23 @@ const config: Config = {
       title: 'Dark Light',
       logo: {
         alt: 'Dark Light Logo',
-        src: 'img/logo.svg',
+        src: 'img/darklight_logo.jpg',
       },
       items: [
         {
           type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          sidebarId: 'documentationSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Documentation',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
-          position: 'right',
+          type: 'docSidebar',
+          sidebarId: 'apiSidebar',
+          position: 'left',
+          label: 'API',
         },
+        {to: '/showcase', label: 'Showcase', position: 'left'},
+        {to: '/blog', label: 'Blog', position: 'left'},
       ],
     },
     footer: {
