@@ -11,32 +11,60 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Educational Framework',
+  Svg: require('@site/static/img/undraw_educator_6dgp.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        DarkLight provides a transparent hardware abstraction that help's you understand
+        what's actually happening in the microcontroller. Unlike complex API's that
+        hide the details, DarkLight's clean <code>API</code> classes and examples makes it perfect for
+        learning embedded systems programming while avoiding tedius setup work. 
+        
+        #link First Tutorial: Blink an LED in 5 munites |
+        Hardware  Reference Guide
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'The Standardized Learning Hardware',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Every DarkLight tutorial assumes the same setup:
+        <code>STM32F030RCT6</code> + <code>ST-Link V2</code>.
+        This standardization means classroom setups are identical,
+        troubleshooting is predictable, and students can focus on
+        embedded concepts rather than toolchain configuration.
+
+        # Consistent across all students
+        # Affordable and widely available
+        # Professional-grade debugging
+        
+        #link View the recommended starter kit
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Professional Development Environment',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        <code>SEGGER Embedded Studio - The Complete IDE Solution</code>
+        <code>One installation, everything included</code>
+
+        DarkLight projects are fully compatible with <code>SEGGER Embedded Studio</code>,
+        a professional-grade IDE that comes with everything you need out of the box:
+        
+        Segger tools will be listed here:
+
+        Educational Benefits:
+        Free for educational use - No license cost for students
+        Single installer - No additional toolchain setups
+        Professional features - Industry-standard tools from day One
+        Seamless ST-V2 integration - requires no tedius setup
+
+        #link download segger embedded studio |
+        Educational License Application
       </>
     ),
   },
