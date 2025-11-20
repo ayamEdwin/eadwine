@@ -62,6 +62,16 @@ const config: Config = {
   ],
 
   themeConfig: {
+    // Announcement banner shown at the very top of the site. Similar to the
+    // official Docusaurus release banner. Customize `content` and link as needed.
+    announcementBar: {
+      id: 'release-2025-11', // Increment this to show the banner again after users close it
+      content:
+        '🎉 <strong>DarkLight v1.0</strong> is out — <a href="/blog/2025-11-20-release">Read the release notes</a>!',
+      backgroundColor: '#fafbfc', // light background
+      textColor: '#091E42', // dark text for contrast
+      isCloseable: true,
+    },
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
