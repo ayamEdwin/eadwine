@@ -57,7 +57,7 @@ function HomepageHeader() {
 function CarouselImages() {
   const images = [
   { src: '/img/darklight_logo.jpg', alt: 'Banner' },
-    { src: '/img/darklight_dev_board.jpg', alt: 'Pinout' },
+    { src: '/img/darklight_pinout.png', alt: 'Pinout' },
   ];
   const [index, setIndex] = useState(0);
   useEffect(() => {
@@ -80,8 +80,8 @@ export default function Home(): ReactNode {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title={`Welcome To ${siteConfig.title}`}
+      description="The embedded platform for learning and rapid prototyping <head />">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

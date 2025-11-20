@@ -5,7 +5,7 @@ Let's discover **DarkLight in less than 5 minutes**.
 
 ## Getting Started
 
-This is two software tools will be your development and debugging environment.
+This two software tools will be your development and debugging environment.
 
 ### What you'll need
   - To get started with using the DarkLight APIs,

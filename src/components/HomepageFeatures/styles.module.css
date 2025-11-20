@@ -8,4 +8,10 @@
 .featureSvg {
   height: 200px;
   width: 200px;
+  border-radius: 12px;
+  /* Ensure raster images cover the box and respect rounded corners */
+  object-fit: cover;
+  display: block;
+  /* Center the image/SVG horizontally within the column */
+  margin: 0 auto;
 }
