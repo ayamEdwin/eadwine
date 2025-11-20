@@ -14,21 +14,21 @@ function HomepageHeader() {
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
-        <div style={{ display: 'flex', alignItems: 'flex-start', gap: '2rem', justifyContent: 'space-between' }}>
-          <div style={{ display: 'flex', alignItems: 'flex-start', gap: '2rem' }}>
-            <img src="/img/darklight_logo.jpg" alt="Logo" style={{ height: '84px', borderRadius: '16px' }} />
-            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
-              <Heading as="h1" className="hero__title" style={{ margin: 0 }}>
-                {siteConfig.title}
-              </Heading>
-              <p className="hero__subtitle" style={{ marginTop: '0.5rem', maxWidth: '600px', whiteSpace: 'normal', wordBreak: 'break-word', fontSize: '1.15rem', fontWeight: 'bold' }}>{siteConfig.tagline}</p>
-              <p style={{ marginTop: '0.1rem', maxWidth: '600px', fontSize: '0.95rem', color: 'var(--custom-text-color)', marginLeft: '-2rem' }}>
-                DarkLight is a clean embedded framework designed specifically for teaching embedded systems
-                and enabling quick proof-of-concept builds. Electrical engineers, hobbyist and engineering
-                students get immediate hardware control with minimal setup overhead using the ubiquitous
-                STM32F0 + ST-Link V2 combination.
-              </p>
-              <div className={styles.buttons} style={{ marginTop: '1rem', marginLeft: '10rem' }}>
+          <div className={styles.heroRow}>
+            <div className={styles.heroLeft}>
+              <img src="/img/darklight_logo.jpg" alt="Logo" className={styles.logoImg} />
+              <div className={styles.heroTextCol}>
+                <Heading as="h1" className={clsx('hero__title', styles.heroTitle)}>
+                  {siteConfig.title}
+                </Heading>
+                <p className={clsx('hero__subtitle', styles.heroTagline)}>{siteConfig.tagline}</p>
+                <p className={styles.heroDesc}>
+                  DarkLight is a clean embedded framework designed specifically for teaching embedded systems
+                  and enabling quick proof-of-concept builds. Electrical engineers, hobbyist and engineering
+                  students get immediate hardware control with minimal setup overhead using the ubiquitous
+                  STM32F0 + ST-Link V2 combination.
+                </p>
+                <div className={styles.buttons}>
                 <Link
                   className="button button--secondary button--lg"
                   to="docs/introduction"
@@ -44,8 +44,10 @@ function HomepageHeader() {
               {/* No image here, only in the row below */}
             </div>
           </div>
-          {/* Carousel for images */}
-          <CarouselImages />
+            {/* Carousel for images */}
+            <div className={styles.heroRight}>
+              <CarouselImages />
+            </div>
         </div>
       </div>
     </header>
@@ -68,14 +70,7 @@ function CarouselImages() {
     <img
       src={images[index].src}
       alt={images[index].alt}
-      style={{
-        height: '240px',
-        objectFit: 'contain',
-        marginLeft: '2rem',
-        boxShadow: '0 0 24px 4px rgba(0,0,0,0.45)',
-        transition: 'opacity 0.5s',
-        borderRadius: '16px',
-      }}
+      className={styles.carouselImg}
     />
   );
 }
