@@ -31,7 +31,7 @@ function HomepageHeader() {
               <div className={styles.buttons} style={{ marginTop: '1rem', marginLeft: '10rem' }}>
                 <Link
                   className="button button--secondary button--lg"
-                  to="/docs/api/intro"
+                  to="docs/introduction"
                   style={{
                     background: 'linear-gradient(90deg, #FFC107 0%, #FFB300 100%)',
                     color: '#222',
