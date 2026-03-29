@@ -5,9 +5,9 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'DarkLight',
-  tagline: 'The Embedded Platform for Learning and Rapid Prototyping',
-  favicon: 'img/darklight.ico',
+  title: "Edwin Setsoafia",
+  tagline: "Aspiring Robotics Researcher | Mechatronics Engineer",
+  favicon: 'img/eddie_profile.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -22,8 +22,8 @@ const config: Config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'KTU Mechatronics', // Usually your GitHub org/user name.
-  projectName: 'Dark Light', // Usually your repo name.
+  organizationName: 'Edwin Setsoafia', // Usually your GitHub org/user name.
+  projectName: 'My Portfolio', // Usually your repo name.
 
   onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'ignore',
@@ -67,7 +67,7 @@ const config: Config = {
     announcementBar: {
       id: 'release-2025-11', // Increment this to show the banner again after users close it
       content:
-        '🎉 <strong>DarkLight v1.0</strong> is out — <a href="/blog/2025-11-20-release">Read the release notes</a>!',
+        '🎉 <strong>Exited to share this </strong> new milestone — <a href="/blog/2025-11-20-release">Check it out 🥳</a>!',
       backgroundColor: '#fafbfc', // light background
       textColor: '#091E42', // dark text for contrast
       isCloseable: true,
@@ -75,20 +75,20 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'Dark Light',
+      title: 'My Space',
       logo: {
-        alt: 'Dark Light Logo',
-        src: 'img/darklight_logo.jpg',
+        alt: 'Eddies Profile Picture',
+        src: 'img/eddie_profile.jpg',
       },
       items: [
         {
           type: 'docSidebar',
-          sidebarId: 'documentationSidebar',
+          sidebarId: 'aboutmeSidebar',
           position: 'left',
-          label: 'Documentation',
+          label: 'About me',
         },
-        {to: '/showcase', label: 'Showcase', position: 'left'},
-        {to: '/community', label: 'Community', position: 'left'},
+        {to: '/projects', label: 'Projects', position: 'left'},
+        {to: '/research', label: 'Research', position: 'left'},
         {to: '/blog', label: 'Blog', position: 'left'},
       ],
     },
@@ -99,8 +99,12 @@ const config: Config = {
           title: 'Docs',
           items: [
             {
-              label: 'Tutorials',
-              to: '/docs/intro',
+              label: 'Introduction',
+              to: '/docs/introduction',
+            },
+             {
+              label: 'API Reference',
+              to: '/docs/category/api-reference',
             },
           ],
         },
@@ -126,13 +130,22 @@ const config: Config = {
               to: '/blog',
             },
             {
+              label: 'Projects',
+              to: '/projects',
+            },
+          ],
+        },
+         {
+          title: 'Legal',
+          items: [
+            {
               label: 'Privacy Policy',
-              href: 'https://www.google.com',
+              to: '/privacy-policy',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} DarkLight Education Projrct`,
+      copyright: `Copyright © ${new Date().getFullYear()} Edwin Setsoafia - Aspiring Robotics Researcher`,
     },
     prism: {
       theme: prismThemes.github,

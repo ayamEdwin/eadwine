@@ -13,54 +13,47 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Educational Framework',
-  Svg: require('@site/static/img/undraw_educator_6dgp.svg').default,
+    title: 'Who am I?',
+  Svg: require('@site/static/img/eddie_portrait.jpg').default,
     description: (
       <>
-        DarkLight provides a transparent hardware abstraction that help's you understand
-        what's actually happening in the microcontroller. Unlike complex API's that
-        hide the details, DarkLight's clean <code>API</code> classes makes it perfect for
-        learning embedded systems programming while avoiding tedius setup work.  
+        I am a Mechatronics Engineering graduate who is passionate about Robotics and A.I research.
+        I received my Bachelor of Technology degree in Mechatronics Engineering from Koforidua Technical University, Ghana in 2025. 
+        My background in mechatronics has enriched my engineering skills in the diverse fields of Mechanical,
+        Electrical/Electronics, Embedded Systems, Robotics and Control Systems.
+  
         
-  <Link to="/docs/Tutorials/led-button"> First Tutorial: 
-         Blink an LED in 5 minutes | LEDs &amp; Buttons</Link>
+  <Link to="/docs/introduction"> Get to know me better here.</Link>
       </>
     ),
   },
   {
-    title: 'A Standardized Hardware',
-    Svg: require('@site/static/img/darklight_dev_board.jpg').default,
-    description: (
-      <>
-        Every DarkLight tutorial assumes the same setup:
-        <code>STM32F030RCT6</code> + <code>ST-Link V2</code>.
-        This standardization means classroom setups are identical,
-        troubleshooting is predictable, and students can focus on
-        embedded concepts rather than toolchain configuration. 
-        Consistent across all students | Affordable and widely available
-        Professional-grade debugging.
-        <Link to="/docs/hardware-guide/kit"> View the recommended starter kit</Link>
-      </>
-    ),
-  },
-  {
-    title: 'Professional IDE',
+    title: 'My research interest',
     Svg: require('@site/static/img/undraw_programming_j1zw.svg').default,
     description: (
       <>
-  <code>SEGGER Embedded Studio | The Complete professional-grade IDE Solution</code>
-  <code>One installation, everything included</code>
-
-        Fully compatible with <code> DarkLight </code> projects |
-        a IDE that comes with everything you need out of the box | 
-        <a href=" https://kb.segger.com/J-Link_RTT_Viewer " target="_blank" rel="noopener noreferrer">
-          J-Link RTT Viewer | </a>
-          <a href=" https://doc.segger.com/UM08027_SystemView.html " target="_blank" rel="noopener noreferrer">
-          SystemView </a>
-       <strong>Educational Benefits:</strong>
-       Free for educational use | No license cost for students
-       Single installer | No additional toolchain setups
-       <Link to="/docs/getting-started/installation-guide"> Checkout Our Installation Guide</Link>
+        With the sole aim of assisting humans with robots,
+        I find pleasure in but not limited to the following 
+        areas of robotics research; <code>Assistive robots</code>,
+        <code>Human-robot interaction</code>, <code>manipulation and control</code>,
+        <code>robot learning</code>, <code>perception</code>,<code>bio-inspiration</code>.
+        <Link to="/docs/hardware-guide/kit"> A comprehensive dive into my research interests can be found here</Link>
+      </>
+    ),
+  },
+  {
+    title: 'Portfolio of projects',
+    Svg: require('@site/static/img/dc_motor.jpg').default,
+    description: (
+      <>
+        I have a portfolio of projects that I have worked on, which includes;
+        personal, academic and industrial internship projects. 
+        These projects have allowed me to apply my knowledge and 
+        skills in mechatronics engineering to real-world problems 
+        and have given me valuable experience in the field of robotics and A.I research.
+      This pages showcase my portfolio of projects, which includes a brief description of each project,
+       the technologies used, and the outcomes achieved. 
+      <Link to="/docs/getting-started/installation-guide"> Checkout my projects here</Link>
           
  
       </>

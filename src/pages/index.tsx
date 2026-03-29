@@ -16,17 +16,20 @@ function HomepageHeader() {
       <div className="container">
           <div className={styles.heroRow}>
             <div className={styles.heroLeft}>
-              <img src="/img/darklight_logo.jpg" alt="Logo" className={styles.logoImg} />
+              <img src="/img/eddie_profile.jpg" alt="Logo" className={styles.logoImg} />
               <div className={styles.heroTextCol}>
                 <Heading as="h1" className={clsx('hero__title', styles.heroTitle)}>
                   {siteConfig.title}
                 </Heading>
                 <p className={clsx('hero__subtitle', styles.heroTagline)}>{siteConfig.tagline}</p>
                 <p className={styles.heroDesc}>
-                  DarkLight is a clean embedded framework designed specifically for teaching embedded systems
-                  and enabling quick proof-of-concept builds. Electrical engineers, hobbyist and engineering
-                  students get immediate hardware control with minimal setup overhead using the ubiquitous
-                  STM32F0 + ST-Link V2 combination.
+                  <em style={{fontSize: '0.8em'}}>"I will do to robots, what Steve Jobs did to computers." - Edwin Setsoafia</em>
+                  <br/><br/>
+                  This is my personal space where I share my projects, thoughts,
+                  and learnings in the world of mechatronics, robotics and programming.
+                  Here you'll find documentation, tutorials, and a showcase of my work.
+                  Whether you're a beginner or a research enthusiast, there's something
+                  here for everyone interested in the exciting world of intelligent robots.
                 </p>
                 <div className={styles.buttons}>
                 <Link
@@ -38,7 +41,7 @@ function HomepageHeader() {
                     border: 'none'
                   }}
                 >
-                  Start Learning for Free
+                 Explore this space
                 </Link>
               </div>
               {/* No image here, only in the row below */}
@@ -56,8 +59,8 @@ function HomepageHeader() {
 // Simple animated carousel component
 function CarouselImages() {
   const images = [
-  { src: '/img/darklight_logo.jpg', alt: 'Banner' },
-    { src: '/img/darklight_pinout.png', alt: 'Pinout' },
+  { src: '/img/3d_printing.png', alt: '3d_printer' },
+    { src: '/img/wheeled_biped.png', alt: 'wheeled biped' },
   ];
   const [index, setIndex] = useState(0);
   useEffect(() => {
@@ -81,7 +84,7 @@ export default function Home(): ReactNode {
   return (
     <Layout
       title={`Welcome To ${siteConfig.title}`}
-      description="The embedded platform for learning and rapid prototyping <head />">
+      description="His journey in the world of mechatronics, robotics and programming <head />">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

@@ -4,11 +4,11 @@ sidebar_position: 1
 
 # Introduction
 
-## Welcome to DarkLight Version 1
+## Welcome to DarkLight V1.0
 ### The Embedded Framework for Learning and Rapid Prototyping
 DarkLight is an educational embedded systems framework specifically designed for undergraduate engineering education and rapid electrical engineering prototyping. Built around the <code>STM32F030RCT6</code> microcontroller and <code>ST-Link V2</code> debugger, DarkLight provides the perfect bridge between theoretical computer engineering concepts and practical firmware development.
 
-### Why DarkLight Exists
+### Why DarkLight?
 Most engineering programs face a fundamental dilemma: Arduino is too abstracted for serious engineering education, while professional IDEs are too complex for effective teaching. DarkLight solves this by providing:
 
 #### Transparent Hardware Control
