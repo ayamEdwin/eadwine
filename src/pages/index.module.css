@@ -108,8 +108,8 @@
   height: 80px;
   border-radius: 20px;
   object-fit: cover;
-  border: 3px solid rgba(255,255,255,0.3);
-  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+  border: 3px solid var(--ifm-color-accent);
+  box-shadow: 0 8px 32px rgba(231,184,106,0.12);
 }
 
 .statusBadge {
@@ -117,7 +117,7 @@
   align-items: center;
   gap: 0.5rem;
   padding: 0.5rem 1rem;
-  background: rgba(255,255,255,0.15);
+  background: rgba(231,184,106,0.10);
   border-radius: 20px;
   font-size: 0.85rem;
   font-weight: 500;
@@ -127,7 +127,7 @@
 .statusDot {
   width: 8px;
   height: 8px;
-  background: #22c55e;
+  background: var(--ifm-color-accent);
   border-radius: 50%;
   animation: pulse 2s ease-in-out infinite;
 }
@@ -141,7 +141,7 @@
   font-size: 3.5rem;
   font-weight: 800;
   margin-bottom: 0.5rem;
-  background: linear-gradient(135deg, #fff 0%, rgba(255,255,255,0.8) 100%);
+  background: linear-gradient(135deg, var(--ifm-color-accent) 0%, #fffbe6 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -151,19 +151,19 @@
 .heroTagline {
   font-size: 1.35rem;
   font-weight: 600;
-  color: rgba(255,255,255,0.9);
+  color: var(--ifm-color-accent);
   margin-bottom: 1.5rem;
 }
 
 .heroDesc {
   font-size: 1.05rem;
   line-height: 1.8;
-  color: rgba(255,255,255,0.8);
+  color: var(--ifm-color-content);
   margin-bottom: 2rem;
 }
 
 .highlight {
-  color: #fbbf24;
+  color: var(--ifm-color-accent);
   font-weight: 600;
 }
 
