@@ -96,28 +96,35 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'About',
           items: [
             {
-              label: 'Introduction',
-              to: '/docs/introduction',
+              label: 'Who am I?',
+              to: '/docs/about',
             },
-             {
-              label: 'API Reference',
-              to: '/docs/category/api-reference',
-            },
+            
           ],
         },
         {
-          title: 'Community',
+          title: 'Active Socials',
           items: [
             {
-              label: 'DarkLight Forum',
+              label: 'Discord',
               href: 'https://www.google.com',
             },
             {
               label: 'LinkedIn',
               href: 'https://www.linkedin.com',
+            },
+
+             {
+              label: 'Slack',
+              href: 'https://www.linkedin.com',
+            },
+
+             {
+              label: 'Github',
+              href: 'https://www.github.com/ayamEdwin',
             },
            
           ],
@@ -133,14 +140,18 @@ const config: Config = {
               label: 'Projects',
               to: '/projects',
             },
+            {
+              label: 'Research',
+              to: '/research',
+            },
           ],
         },
          {
-          title: 'Legal',
+          title: 'Contact',
           items: [
             {
-              label: 'Privacy Policy',
-              to: '/privacy-policy',
+              label: 'Email',
+              to: 'setsoafiaedwin7@gmail.com',
             },
           ],
         },

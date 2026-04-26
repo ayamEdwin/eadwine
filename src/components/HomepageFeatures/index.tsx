@@ -23,13 +23,13 @@ const FeatureList: FeatureItem[] = [
         Electrical/Electronics, Embedded Systems, Robotics and Control Systems.
   
         
-  <Link to="/docs/introduction"> Get to know me better here.</Link>
+  <Link to="/docs/about"> Get to know me better here.</Link>
       </>
     ),
   },
   {
     title: 'My research interest',
-    Svg: require('@site/static/img/undraw_programming_j1zw.svg').default,
+    Svg: require('@site/static/img/naokids.jpg').default,
     description: (
       <>
         With the sole aim of assisting humans with robots,

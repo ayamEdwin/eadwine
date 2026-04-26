@@ -23,7 +23,7 @@ function HomepageHeader() {
                 </Heading>
                 <p className={clsx('hero__subtitle', styles.heroTagline)}>{siteConfig.tagline}</p>
                 <p className={styles.heroDesc}>
-                  <em style={{fontSize: '0.8em'}}>"I will do to robots, what Steve Jobs did to computers." - Edwin Setsoafia</em>
+                  <em style={{fontSize: '0.8em'}}>📌 Doing to robots what Steve Jobs did to computers</em>
                   <br/><br/>
                   This is my personal space where I share my projects, thoughts,
                   and learnings in the world of mechatronics, robotics and programming.
