@@ -81,13 +81,13 @@ const config: Config = {
         src: 'img/eddie_profile.jpg',
       },
       items: [
+        {to: '/about', label: 'About me', position: 'left'},
         {
           type: 'docSidebar',
-          sidebarId: 'aboutmeSidebar',
+          sidebarId: 'projectsSidebar',
           position: 'left',
-          label: 'About me',
+          label: 'Projects',
         },
-        {to: '/projects', label: 'Projects', position: 'left'},
         {to: '/research', label: 'Research', position: 'left'},
         {to: '/blog', label: 'Blog', position: 'left'},
       ],
@@ -100,7 +100,7 @@ const config: Config = {
           items: [
             {
               label: 'Who am I?',
-              to: '/docs/about',
+              to: '/about',
             },
             
           ],
@@ -138,7 +138,7 @@ const config: Config = {
             },
             {
               label: 'Projects',
-              to: '/projects',
+              to: 'docs/projects',
             },
             {
               label: 'Research',

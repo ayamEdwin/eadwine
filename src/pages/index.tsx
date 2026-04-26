@@ -13,70 +13,130 @@ function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
+      <div className={styles.heroBackground}>
+        <div className={styles.gridPattern}></div>
+        <div className={styles.floatingShape1}></div>
+        <div className={styles.floatingShape2}></div>
+        <div className={styles.floatingShape3}></div>
+      </div>
       <div className="container">
-          <div className={styles.heroRow}>
-            <div className={styles.heroLeft}>
-              <img src="/img/eddie_profile.jpg" alt="Logo" className={styles.logoImg} />
-              <div className={styles.heroTextCol}>
-                <Heading as="h1" className={clsx('hero__title', styles.heroTitle)}>
-                  {siteConfig.title}
-                </Heading>
-                <p className={clsx('hero__subtitle', styles.heroTagline)}>{siteConfig.tagline}</p>
-                <p className={styles.heroDesc}>
-                  <em style={{fontSize: '0.8em'}}>📌 Doing to robots what Steve Jobs did to computers</em>
-                  <br/><br/>
-                  This is my personal space where I share my projects, thoughts,
-                  and learnings in the world of mechatronics, robotics and programming.
-                  Here you'll find documentation, tutorials, and a showcase of my work.
-                  Whether you're a beginner or a research enthusiast, there's something
-                  here for everyone interested in the exciting world of intelligent robots.
-                </p>
-                <div className={styles.buttons}>
-                <Link
-                  className="button button--secondary button--lg"
-                  to="docs/introduction"
-                  style={{
-                    background: 'linear-gradient(90deg, #FFC107 0%, #FFB300 100%)',
-                    color: '#222',
-                    border: 'none'
-                  }}
-                >
-                 Explore this space
-                </Link>
+        <div className={styles.heroContent}>
+          <div className={styles.heroMain}>
+            <div className={styles.profileSection}>
+              <img src="/img/eddie_profile.jpg" alt="Edwin Setsoafia" className={styles.profileImg} />
+              <div className={styles.statusBadge}>
+                <span className={styles.statusDot}></span>
+                Available for Projects
               </div>
-              {/* No image here, only in the row below */}
+            </div>
+            
+            <Heading as="h1" className={styles.heroTitle}>
+              {siteConfig.title}
+            </Heading>
+            <p className={styles.heroTagline}>{siteConfig.tagline}</p>
+            
+            <p className={styles.heroDesc}>
+              <span className={styles.highlight}>📌 Doing to robots what Steven Jobs and Wozniak did to computers</span>
+              <br/><br/>
+              Welcome to my digital playground! I'm a Mechatronics Engineer passionate about 
+              <span className={styles.keyword}> Robotics</span>, <span className={styles.keyword}>AI</span>, and 
+              <span className={styles.keyword}> Embedded Systems</span>.
+              <br/><br/>
+              Explore my projects, tutorials, and research in the exciting world of intelligent robots.
+            </p>
+            
+            <div className={styles.buttonGroup}>
+              <Link
+                className={styles.primaryButton}
+                to="/about"
+              >
+                <span>👤 About Me</span>
+              </Link>
+              <Link
+                className={styles.secondaryButton}
+                to="/research"
+              >
+                <span>🔬 Research</span>
+              </Link>
+              <Link
+                className={styles.tertiaryButton}
+                to="/blog"
+              >
+                <span>📝 Blog</span>
+              </Link>
+            </div>
+            
+            <div className={styles.statsRow}>
+              <div className={styles.statItem}>
+                <span className={styles.statNumber}>5+</span>
+                <span className={styles.statLabel}>Years Experience</span>
+              </div>
+              <div className={styles.statItem}>
+                <span className={styles.statNumber}>20+</span>
+                <span className={styles.statLabel}>Projects</span>
+              </div>
+              <div className={styles.statItem}>
+                <span className={styles.statNumber}>10+</span>
+                <span className={styles.statLabel}>Publications</span>
+              </div>
             </div>
           </div>
-            {/* Carousel for images */}
-            <div className={styles.heroRight}>
+          
+          <div className={styles.heroVisual}>
+            <div className={styles.robotPreview}>
               <CarouselImages />
             </div>
+          </div>
         </div>
       </div>
     </header>
   );
+}
 
-// Simple animated carousel component
 function CarouselImages() {
   const images = [
-  { src: '/img/3d_printing.png', alt: '3d_printer' },
-    { src: '/img/wheeled_biped.png', alt: 'wheeled biped' },
+    { src: '/img/3d_printing.png', alt: '3D Printing Project', label: '3D Printing' },
+    { src: '/img/wheeled_biped.png', alt: 'Wheeled Biped Robot', label: 'Wheeled Biped' },
   ];
   const [index, setIndex] = useState(0);
+  const [isHovered, setIsHovered] = useState(false);
+  
   useEffect(() => {
+    if (isHovered) return;
     const timer = setInterval(() => {
       setIndex((prev) => (prev + 1) % images.length);
-    }, 2500);
+    }, 3000);
     return () => clearInterval(timer);
-  }, []);
+  }, [isHovered]);
+  
   return (
-    <img
-      src={images[index].src}
-      alt={images[index].alt}
-      className={styles.carouselImg}
-    />
+    <div 
+      className={styles.carouselContainer}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
+      <div className={styles.carouselTrack}>
+        {images.map((img, i) => (
+          <div 
+            key={i} 
+            className={`${styles.carouselSlide} ${i === index ? styles.active : ''}`}
+          >
+            <img src={img.src} alt={img.alt} className={styles.carouselImg} />
+            <div className={styles.imageLabel}>{img.label}</div>
+          </div>
+        ))}
+      </div>
+      <div className={styles.carouselDots}>
+        {images.map((_, i) => (
+          <span 
+            key={i} 
+            className={`${styles.dot} ${i === index ? styles.dotActive : ''}`}
+            onClick={() => setIndex(i)}
+          />
+        ))}
+      </div>
+    </div>
   );
-}
 }
 
 export default function Home(): ReactNode {
@@ -84,7 +144,7 @@ export default function Home(): ReactNode {
   return (
     <Layout
       title={`Welcome To ${siteConfig.title}`}
-      description="His journey in the world of mechatronics, robotics and programming <head />">
+      description="His journey in the world of mechatronics, robotics and programming">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
