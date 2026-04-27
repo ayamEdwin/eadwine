@@ -38,8 +38,8 @@ function HomepageHeader() {
             <p className={styles.heroDesc}>
               <span className={styles.highlight}>📌 Doing to robots what Steven Jobs and Wozniak did to computers</span>
               <br/><br/>
-              Welcome to my digital playground! I'm a Mechatronics Engineer passionate about 
-              <span className={styles.keyword}> Robotics</span>, <span className={styles.keyword}>AI</span>, and 
+              Welcome to my digital space. I'm a Mechatronics Engineer passionate about   
+              <span className={styles.keyword}>  Robotics </span>, <span className={styles.keyword}>AI</span>, and 
               <span className={styles.keyword}> Embedded Systems</span>.
               <br/><br/>
               Explore my projects, tutorials, and research in the exciting world of intelligent robots.
