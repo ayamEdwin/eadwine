@@ -6,6 +6,20 @@ hide_table_of_contents: true
 
 import EddieProfile from '@site/static/img/eddie_profile.jpg'
 import EddieSoldering from '@site/static/img/eddie_soldering_ledstrip.jpg'
+import {
+  Github,
+  Linkedin,
+  Mail,
+  Cpu,
+  Bot,
+  Wrench,
+  CircuitBoard,
+  Brain,
+  Radio,
+  Settings
+} from 'lucide-react';
+
+
 
 <style>{`
   .about-hero {
@@ -139,7 +153,7 @@ import EddieSoldering from '@site/static/img/eddie_soldering_ledstrip.jpg'
   }
   
   .vision-list li::before {
-    content: '🤖';
+    content: '';
     position: absolute;
     left: 0;
     font-size: 1.2rem;
@@ -201,6 +215,8 @@ import EddieSoldering from '@site/static/img/eddie_soldering_ledstrip.jpg'
     background: var(--ifm-color-primary-dark);
     transform: translateY(-3px);
   }
+}
+
 `}</style>
 
 <div className="about-hero">
@@ -231,11 +247,9 @@ Hello there! I'm **Edwin Setsoafia**, a Mechatronics engineering graduate passio
 
 I received my **Bachelor of Technology degree in Mechatronics engineering** from Koforidua Technical University, Ghana. My background in mechatronics has enriched my engineering skills in the diverse fields of:
 
-- ⚙️ **Mechanical Engineering**
-- ⚡ **Electrical/Electronics**
-- 🖥️ **Embedded Systems**
-- 🤖 **Robotics**
-- 🎛️ **Control Systems**
+<code>Mechanical Engineering</code> <code>Electrical/Electronics</code>                            
+   <code>Embedded Systems</code>           <code>Robotics</code>                   
+<code>Control Systems</code>                    
 
 </div>
 
@@ -260,13 +274,13 @@ I believe in a future where autonomous and intelligent robots will one day take 
 
 <ul className="vision-list">
 
-<li>**Robot Perception** — Enabling robots to understand and interpret their environment through advanced sensors and computer vision</li>
+<li><Bot size={18} /><code>Robot Perception</code> : Enabling robots to understand and interpret their environment through advanced sensors and computer vision</li>
 
-<li>**Human-Robot Interaction** — Creating intuitive and natural interactions between humans and robots</li>
+<li><Bot size={18} /><code>Human-Robot Interaction</code> : Creating intuitive and natural interactions between humans and robots</li>
 
-<li>**Assistive Robotics** — Developing robots to assist the physically challenged, elderly, and children</li>
+<li><Bot size={18} /><code>Assistive Robotics</code> : Developing robots to assist the physically challenged, elderly, and children</li>
 
-<li>**Collaborative Robotics** — Building robots that help people be better at their jobs through collaboration</li>
+<li><Bot size={18} /><code>Colloborative Robotics</code> : Building robots that help people be better at their jobs through collaboration</li>
 
 </ul>
 
@@ -276,34 +290,49 @@ I believe in a future where autonomous and intelligent robots will one day take 
 
 <div className="skills-grid">
 
-<div className="skill-tag">🔧 CAD Design</div>
+<div className="skill-tag">
+  <Wrench size={18} /><br></br>
+  <span>CAD Design</span>
+</div>
 
-<div className="skill-tag">⚡ Circuit Design</div>
 
-<div className="skill-tag">🖥️ Embedded C</div>
+<div className="skill-tag">
+  <CircuitBoard size={18} /><br></br>
+  <span>Circuit Design</span>
+</div>
 
-<div className="skill-tag">🐍 Python</div>
+<div className="skill-tag">
+  <Cpu size={18} /><br></br>
+  <span>Embedded C</span>
+</div>
 
-<div className="skill-tag">🧠 Machine Learning</div>
+<div className="skill-tag">
+  <Brain size={18} /><br></br>
+  <span>Machine Learning</span>
+</div>
 
-<div className="skill-tag">📡 Sensor Fusion</div>
+<div className="skill-tag">
+  <Radio size={18} /><br></br>
+  <span>Sensor Fusion</span>
+</div>
 
-<div className="skill-tag">🎛️ Control Systems</div>
+<div className="skill-tag">
+  <Settings size={18} /><br></br>
+  <span>Control Systems</span>
+</div>
 
-<div className="skill-tag">🔬 ROS</div>
+<div className="skill-tag">
+  <Bot size={18} /><br></br>
+  <span>ROS</span>
+</div>
+
 
 </div>
 
 ---
 
-## Let's Connect
+:::note
 
-<div className="social-links">
+I'm avalable for research colloborations. Let's connect and break the boundaries of Moravec's paradox together.
 
-<a href="https://github.com/ayamEdwin" className="social-link" target="_blank">🐙 GitHub</a>
-
-<a href="https://linkedin.com" className="social-link" target="_blank">💼 LinkedIn</a>
-
-<a href="mailto:edwinsetsoafia9@gmail.com" className="social-link">📧 Email</a>
-
-</div> 
+:::

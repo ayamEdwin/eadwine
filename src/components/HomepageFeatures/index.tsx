@@ -23,7 +23,7 @@ const FeatureList: FeatureItem[] = [
         Electrical/Electronics, Embedded Systems, Robotics and Control Systems.
   
         
-  <Link to="/docs/about"> Get to know me better here.</Link>
+  <Link to="/about"> Get to know me better here.</Link>
       </>
     ),
   },

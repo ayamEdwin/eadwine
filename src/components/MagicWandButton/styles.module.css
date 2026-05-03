@@ -1,0 +1,66 @@
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  z-index: 99999;
+}
+
+.magicWand {
+  position: fixed;
+  top: 1.25rem;
+  right: 1.5rem;
+  background: transparent;
+  border: none;
+  font-size: 1.75rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  transition: transform 0.2s ease;
+  pointer-events: auto !important;
+  z-index: 100000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.magicWand:hover {
+  transform: scale(1.2) rotate(20deg);
+}
+
+.magicWand:active {
+  transform: scale(0.95) rotate(20deg);
+}
+
+.emoji {
+  position: fixed;
+  font-size: 1.5rem;
+  pointer-events: none;
+  user-select: none;
+  will-change: transform, opacity;
+}
+
+@keyframes spread {
+  0% {
+    opacity: 1;
+    transform: translate(0, 0) scale(1) rotate(0deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(var(--endX), var(--endY)) scale(0.5) rotate(360deg);
+  }
+}
+
+/* Responsive positioning for smaller screens */
+@media (max-width: 768px) {
+  .magicWand {
+    top: 0.75rem;
+    right: 0.75rem;
+    font-size: 1.25rem;
+  }
+
+  .emoji {
+    font-size: 1.25rem;
+  }
+}

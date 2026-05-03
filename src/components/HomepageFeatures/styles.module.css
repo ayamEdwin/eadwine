@@ -1,3 +1,19 @@
+/* Gold accent highlight for menu/list items */
+.featureListItem, .featureListItem a, .featureListItem:visited {
+  color: var(--ifm-color-content);
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.featureListItem:hover, .featureListItem:focus, .featureListItem a:hover, .featureListItem a:focus {
+  color: var(--ifm-color-accent);
+  border-color: var(--ifm-color-accent);
+}
+
+/* Optional: gold underline for active/highlighted */
+.featureListItem.active, .featureListItem.selected {
+  color: var(--ifm-color-accent);
+  border-bottom: 2px solid var(--ifm-color-accent);
+}
 .features {
   display: flex;
   align-items: center;

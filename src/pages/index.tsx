@@ -26,7 +26,7 @@ function HomepageHeader() {
               <img src="/img/eddie_profile.jpg" alt="Edwin Setsoafia" className={styles.profileImg} />
               <div className={styles.statusBadge}>
                 <span className={styles.statusDot}></span>
-                Available for Projects
+                Available for research colloborations
               </div>
             </div>
             
@@ -68,16 +68,16 @@ function HomepageHeader() {
             
             <div className={styles.statsRow}>
               <div className={styles.statItem}>
-                <span className={styles.statNumber}>5+</span>
-                <span className={styles.statLabel}>Years Experience</span>
+                <span className={styles.statNumber}>2</span>
+                <span className={styles.statLabel}>Internships</span>
               </div>
               <div className={styles.statItem}>
-                <span className={styles.statNumber}>20+</span>
+                <span className={styles.statNumber}>5</span>
                 <span className={styles.statLabel}>Projects</span>
               </div>
               <div className={styles.statItem}>
-                <span className={styles.statNumber}>10+</span>
-                <span className={styles.statLabel}>Publications</span>
+                <span className={styles.statNumber}>🎓</span>
+                <span className={styles.statLabel}>Mechatronics</span>
               </div>
             </div>
           </div>
@@ -97,6 +97,7 @@ function CarouselImages() {
   const images = [
     { src: '/img/3d_printing.png', alt: '3D Printing Project', label: '3D Printing' },
     { src: '/img/wheeled_biped.png', alt: 'Wheeled Biped Robot', label: 'Wheeled Biped' },
+    { src: '/img/eddie_with_team_digi_clock.jpg', alt: 'Eddie with Team Digital Clock', label: 'Team Player' },
   ];
   const [index, setIndex] = useState(0);
   const [isHovered, setIsHovered] = useState(false);

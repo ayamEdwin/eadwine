@@ -2,6 +2,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
+
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
@@ -15,7 +16,7 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://dark-light-k9x08u5hu-ayamedwins-projects.vercel.app/',
+  url: 'https://eadwine-k9x08u5hu-ayamedwins-projects.vercel.app/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -62,14 +63,21 @@ const config: Config = {
   ],
 
   themeConfig: {
-    // Announcement banner shown at the very top of the site. Similar to the
-    // official Docusaurus release banner. Customize `content` and link as needed.
+    // Lock site to dark mode regardless of OS preference
+    colorMode: {
+      defaultMode: 'dark',
+      disableSwitch: true,
+      respectPrefersColorScheme: false,
+    },
+  
+
+    // Announcement banner shown at the very top of the site.
     announcementBar: {
       id: 'release-2025-11', // Increment this to show the banner again after users close it
       content:
         '🎉 <strong>Exited to share this </strong> new milestone — <a href="/blog/2025-11-20-release">Check it out 🥳</a>!',
-      backgroundColor: '#fafbfc', // light background
-      textColor: '#091E42', // dark text for contrast
+      backgroundColor: '#18181b', // matches your dark background
+      textColor: '#f5f5f7',       // matches your --ifm-color-content
       isCloseable: true,
     },
     // Replace with your project's social card

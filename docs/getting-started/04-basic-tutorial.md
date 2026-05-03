@@ -1,3 +1,0 @@
-
-
-# Blinking an LED

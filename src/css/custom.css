@@ -44,3 +44,25 @@
   --ifm-link-hover-color: #fffbe6;
   --docusaurus-highlighted-code-line-bg: rgba(231, 184, 106, 0.07);
 }
+
+
+
+/* Navbar link hover & active color */
+.navbar__link:hover,
+.navbar__link--active {
+  color: var(--ifm-color-accent) !important;
+}
+
+/* Force dark theme appearance in light mode */
+:root {
+  --ifm-background-color: #18181b;
+  --ifm-navbar-background-color: #18181b;
+  --ifm-footer-background-color: #18181b;
+  --ifm-card-background-color: #23232a;
+  --ifm-toc-border-color: #23232a;
+  --ifm-color-emphasis-300: #23232a;
+  --ifm-hr-border-color: #23232a;
+  color-scheme: dark;
+}
+
+
