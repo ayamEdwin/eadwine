@@ -1,6 +1,6 @@
 # The MTR-25 Crusher
 
-<div style={{display: 'flex', gap: '20px', alignItems: 'flex-start'}}>
+<div style={{display: 'flex', gap: '20px', alignItems: 'flex-start', flexWrap: 'wrap'}}>
 <div style={{flex: 1}}>
 
 ## What is MTR-25 Crusher?
@@ -25,9 +25,9 @@ user interface tasks for a sustainable, cost-effective
 crushing solution.
 
 </div>
-<div style={{flex: '0 0 300px'}}>
+<div style={{flex: '0 1 300px'}}>
 
-![MTR-25 Crusher](/img/crusher.jpg)
+<img src="/img/crusher.jpg" alt="MTR-25 Crusher" style={{width: '100%', height: 'auto', display: 'block', maxWidth: '100%'}} />
 
 </div>
 </div>
@@ -35,10 +35,10 @@ crushing solution.
 
 ## Motivation
 
-<div style={{display: 'flex', gap: '20px', alignItems: 'flex-start'}}>
-<div style={{flex: '0 0 300px'}}>
+<div style={{display: 'flex', gap: '20px', alignItems: 'flex-start', flexWrap: 'wrap'}}>
+<div style={{flex: '0 1 300px'}}>
 
-![Crusher 3D View 1](/img/crusher-3d1.jpg)
+<img src="/img/crusher-3d1.jpg" alt="Crusher 3D View 1" style={{width: '100%', height: 'auto', display: 'block', maxWidth: '100%'}} />
 
 </div>
 <div style={{flex: 1}}>
@@ -57,7 +57,7 @@ waste management and circular economy initiatives.
 
 ## Objectives
 
-<div style={{display: 'flex', gap: '20px', alignItems: 'flex-start'}}>
+<div style={{display: 'flex', gap: '20px', alignItems: 'flex-start', flexWrap: 'wrap'}}>
 <div style={{flex: 1}}>
 
 As the team leader for the Software Implementation
@@ -77,9 +77,9 @@ smoothly before deployment and
 integration into the main crusher.
 
 </div>
-<div style={{flex: '0 0 300px'}}>
+<div style={{flex: '0 1 300px'}}>
 
-![Crusher 2D Diagram](/img/crusher-2d.jpg)
+<img src="/img/crusher-2d.jpg" alt="Crusher 2D Diagram" style={{width: '100%', height: 'auto', display: 'block', maxWidth: '100%'}} />
 
 </div>
 </div>
@@ -100,13 +100,13 @@ control.
 5. Conducted unit tests on key firmware modules to
 ensure robustness and fault tolerance.
 
-![Firmware Architecture](/img/firmware-architecture.png)
+<img src="/img/firmware-architecture.png" alt="Firmware Architecture" style={{width: '100%', height: 'auto', display: 'block', margin: '20px 0'}} />
 
 
 
 ## Technical Highlights
 
-<div style={{display: 'flex', gap: '20px', alignItems: 'flex-start'}}>
+<div style={{display: 'flex', gap: '20px', alignItems: 'flex-start', flexWrap: 'wrap'}}>
 <div style={{flex: 1}}>
 
 1. Used STM32F030 microcontroller as master controller
@@ -127,11 +127,11 @@ operational
 scenarios.
 
 </div>
-<div style={{flex: '0 0 300px'}}>
+<div style={{flex: '0 1 300px'}}>
 
-![Code Screenshot](/img/code-screenshot.png)
+<img src="/img/code-screenshot.png" alt="Code Screenshot" style={{width: '100%', height: 'auto', display: 'block', marginBottom: '10px', maxWidth: '100%'}} />
 
-![HMI Prototype](/img/hmi_prototype.jpg)
+<img src="/img/hmi_prototype.jpg" alt="HMI Prototype" style={{width: '100%', height: 'auto', display: 'block', maxWidth: '100%'}} />
 
 </div>
 </div>
