@@ -1,51 +1,93 @@
-import React, { useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
 import styles from './styles.module.css';
 
 export default function MagicWandButton() {
   const containerRef = useRef<HTMLDivElement>(null);
+  const buttonRef = useRef<HTMLButtonElement>(null);
+
+  useEffect(() => {
+    // Inject keyframes dynamically for better CSS variable support
+    const styleSheet = document.createElement('style');
+    styleSheet.textContent = `
+      @keyframes emojiSpread {
+        0% {
+          opacity: 1;
+          transform: translate(0, 0) scale(1) rotate(0deg);
+        }
+        50% {
+          opacity: 1;
+          transform: translate(calc(var(--drift-x) * 0.7), calc(var(--drift-y) * 0.7)) scale(1.1) rotate(180deg);
+        }
+        100% {
+          opacity: 0;
+          transform: translate(var(--drift-x), var(--drift-y)) scale(0.3) rotate(360deg);
+        }
+      }
+      
+      @keyframes ripple {
+        0% {
+          box-shadow: 0 0 0 0 rgba(138, 43, 226, 0.7);
+          transform: scale(1);
+        }
+        50% {
+          box-shadow: 0 0 0 15px rgba(138, 43, 226, 0);
+          transform: scale(1.05);
+        }
+        100% {
+          box-shadow: 0 0 0 0 rgba(138, 43, 226, 0);
+          transform: scale(1);
+        }
+      }
+    `;
+    document.head.appendChild(styleSheet);
+    
+    return () => styleSheet.remove();
+  }, []);
 
   const triggerAnimation = () => {
-    const emojis = ['❤️', '😊', '🎉', '✨', '🚀', '💫', '🎈'];
+    const emojis = ['❤️', '😊', '🎉', '✨', '🚀', '💫', '🎈', '👏'];
     const container = containerRef.current;
+    const button = buttonRef.current;
     
-    if (!container) return;
+    if (!container || !button) return;
 
-    // Create 30-50 emoji elements
-    for (let i = 0; i < 40; i++) {
+    // Get button position
+    const buttonRect = button.getBoundingClientRect();
+    const startX = buttonRect.left + buttonRect.width / 2;
+    const startY = buttonRect.top + buttonRect.height / 2;
+
+    // Create 15-25 emoji elements spawning from button
+    for (let i = 0; i < 20; i++) {
       const emoji = document.createElement('div');
-      emoji.className = styles.emoji;
       emoji.textContent = emojis[Math.floor(Math.random() * emojis.length)];
       
-      // Random starting position
-      const startX = Math.random() * window.innerWidth;
-      const startY = Math.random() * window.innerHeight;
+      // Facebook-style downward spread with horizontal drift
+      const angle = Math.random() * Math.PI * 2;
+      const horizontalDrift = Math.cos(angle) * (40 + Math.random() * 80);
+      const verticalDistance = 200 + Math.random() * 300; // Move down
       
+      const duration = 2.5 + Math.random() * 1;
+      const delay = i * 0.05; // Staggered spawn effect
+
+      // Apply all styles inline
+      emoji.style.position = 'fixed';
       emoji.style.left = startX + 'px';
       emoji.style.top = startY + 'px';
+      emoji.style.fontSize = '1.5rem';
+      emoji.style.pointerEvents = 'none';
+      emoji.style.userSelect = 'none';
+      emoji.style.willChange = 'transform, opacity';
+      emoji.style.setProperty('--drift-x', horizontalDrift + 'px');
+      emoji.style.setProperty('--drift-y', verticalDistance + 'px');
+      emoji.style.animation = `emojiSpread ${duration}s ease-out forwards`;
+      emoji.style.animationDelay = `${delay}s`;
       
       container.appendChild(emoji);
 
-      // Random animation direction and duration
-      const angle = Math.random() * Math.PI * 2;
-      const distance = 50 + Math.random() * 200;
-      const endX = startX + Math.cos(angle) * distance;
-      const endY = startY + Math.sin(angle) * distance - Math.random() * 100; // Always move up somewhat
-      
-      const duration = 2 + Math.random() * 1.5;
-
-      emoji.style.animation = `none`;
-      
-      // Use getComputedStyle to trigger reflow
-      void emoji.offsetWidth;
-      
-      emoji.style.animation = `spread ${duration}s ease-out forwards`;
-      emoji.style.setProperty('--endX', endX + 'px');
-      emoji.style.setProperty('--endY', endY + 'px');
-
-      // Remove emoji after animation
+      // Remove emoji after animation completes
       setTimeout(() => {
         emoji.remove();
-      }, duration * 1000);
+      }, (duration + delay) * 1000);
     }
   };
 
@@ -53,31 +95,20 @@ export default function MagicWandButton() {
     <div 
       ref={containerRef} 
       className={styles.container}
-      style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, pointerEvents: 'none', zIndex: 99999 }}
     >
-      <button 
-        className={styles.magicWand}
-        onClick={triggerAnimation}
-        title="Spread some joy!"
-        aria-label="Magic wand - spread joy"
-        style={{
-          position: 'fixed',
-          top: '1.25rem',
-          right: '1.5rem',
-          background: 'transparent',
-          border: 'none',
-          fontSize: '2rem',
-          cursor: 'pointer',
-          padding: '0.5rem',
-          pointerEvents: 'auto',
-          zIndex: 100000,
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-        }}
-      >
-        ✨
-      </button>
+      <div className={styles.buttonWrapper}>
+        <button 
+          ref={buttonRef}
+          className={styles.magicWand}
+          onClick={triggerAnimation}
+          title="Spread some love!"
+          aria-label="Magic wand - spread some love"
+        >
+          🪄
+        </button>
+        <span className={styles.ripple}></span>
+        <span className={styles.tag}>spread some love</span>
+      </div>
     </div>
   );
 }
