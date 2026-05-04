@@ -2,6 +2,7 @@ import type {ReactNode} from 'react';
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
@@ -11,6 +12,7 @@ import React, { useState, useEffect } from 'react';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
+  const profileImg = useBaseUrl('/img/eddie_profile.jpg');
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className={styles.heroBackground}>
@@ -23,7 +25,7 @@ function HomepageHeader() {
         <div className={styles.heroContent}>
           <div className={styles.heroMain}>
             <div className={styles.profileSection}>
-              <img src="/img/eddie_profile.jpg" alt="Edwin Setsoafia" className={styles.profileImg} />
+              <img src={profileImg} alt="Edwin Setsoafia" className={styles.profileImg} />
               <div className={styles.statusBadge}>
                 <span className={styles.statusDot}></span>
                 Available for research colloborations
@@ -94,10 +96,11 @@ function HomepageHeader() {
 }
 
 function CarouselImages() {
+  const baseUrl = useBaseUrl('/');
   const images = [
-    { src: '/img/3d_printing.png', alt: '3D Printing Project', label: '3D Printing' },
-    { src: '/img/wheeled_biped.png', alt: 'Wheeled Biped Robot', label: 'Wheeled Biped' },
-    { src: '/img/eddie_with_team_digi_clock.jpg', alt: 'Eddie with Team Digital Clock', label: 'Team Player' },
+    { src: baseUrl + 'img/3d_printing.png', alt: '3D Printing Project', label: '3D Printing' },
+    { src: baseUrl + 'img/wheeled_biped.png', alt: 'Wheeled Biped Robot', label: 'Wheeled Biped' },
+    { src: baseUrl + 'img/eddie_with_team_digi_clock.jpg', alt: 'Eddie with Team Digital Clock', label: 'Team Player' },
   ];
   const [index, setIndex] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
