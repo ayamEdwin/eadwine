@@ -1,3 +1,10 @@
+import crusherImg from '@site/static/img/crusher.jpg'
+import crusher3d1Img from '@site/static/img/crusher-3d1.jpg'
+import crusher2dImg from '@site/static/img/crusher-2d.jpg'
+import firmwareArchImg from '@site/static/img/firmware-architecture.png'
+import codeScreenImg from '@site/static/img/code-screenshot.png'
+import hmiPrototypeImg from '@site/static/img/hmi_prototype.jpg'
+
 # The MTR-25 Crusher
 
 <div style={{display: 'flex', gap: '20px', alignItems: 'flex-start', flexWrap: 'wrap'}}>
@@ -27,7 +34,7 @@ crushing solution.
 </div>
 <div style={{flex: '0 1 300px'}}>
 
-<img src="../../static/img/crusher.jpg" alt="MTR-25 Crusher" style={{width: '100%', height: 'auto', display: 'block', maxWidth: '100%'}} />
+<img src={crusherImg} alt="MTR-25 Crusher" style={{width: '100%', height: 'auto', display: 'block', maxWidth: '100%'}} />
 
 </div>
 </div>
@@ -38,7 +45,7 @@ crushing solution.
 <div style={{display: 'flex', gap: '20px', alignItems: 'flex-start', flexWrap: 'wrap'}}>
 <div style={{flex: '0 1 300px'}}>
 
-<img src="../../static/img/crusher-3d1.jpg" alt="Crusher 3D View 1" style={{width: '100%', height: 'auto', display: 'block', maxWidth: '100%'}} />
+<img src={crusher3d1Img} alt="Crusher 3D View 1" style={{width: '100%', height: 'auto', display: 'block', maxWidth: '100%'}} />
 
 </div>
 <div style={{flex: 1}}>
@@ -79,7 +86,7 @@ integration into the main crusher.
 </div>
 <div style={{flex: '0 1 300px'}}>
 
-<img src="../../static/img/crusher-2d.jpg" alt="Crusher 2D Diagram" style={{width: '100%', height: 'auto', display: 'block', maxWidth: '100%'}} />
+<img src={crusher2dImg} alt="Crusher 2D Diagram" style={{width: '100%', height: 'auto', display: 'block', maxWidth: '100%'}} />
 
 </div>
 </div>
@@ -100,7 +107,7 @@ control.
 5. Conducted unit tests on key firmware modules to
 ensure robustness and fault tolerance.
 
-<img src="../../static/img/firmware-architecture.png" alt="Firmware Architecture" style={{width: '100%', height: 'auto', display: 'block', margin: '20px 0'}} />
+<img src={firmwareArchImg} alt="Firmware Architecture" style={{width: '100%', height: 'auto', display: 'block', margin: '20px 0'}} />
 
 
 
@@ -129,9 +136,9 @@ scenarios.
 </div>
 <div style={{flex: '0 1 300px'}}>
 
-<img src="../../static/img/code-screenshot.png" alt="Code Screenshot" style={{width: '100%', height: 'auto', display: 'block', marginBottom: '10px', maxWidth: '100%'}} />
+<img src={codeScreenImg} alt="Code Screenshot" style={{width: '100%', height: 'auto', display: 'block', marginBottom: '10px', maxWidth: '100%'}} />
 
-<img src="../../static/img/hmi_prototype.jpg" alt="HMI Prototype" style={{width: '100%', height: 'auto', display: 'block', maxWidth: '100%'}} />
+<img src={hmiPrototypeImg} alt="HMI Prototype" style={{width: '100%', height: 'auto', display: 'block', maxWidth: '100%'}} />
 
 </div>
 </div>
