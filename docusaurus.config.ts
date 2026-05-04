@@ -16,10 +16,10 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://eadwine-k9x08u5hu-ayamedwins-projects.vercel.app/',
+  url: 'https://ayamEdwin.github.io', // Your website URL
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/eadwine',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
