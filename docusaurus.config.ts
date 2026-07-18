@@ -81,13 +81,9 @@ const config: Config = {
       isCloseable: true,
     },
     // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/eddie_profile.jpg',
     navbar: {
       title: 'My Space',
-      logo: {
-        alt: 'Eddies Profile Picture',
-        src: 'img/eddie_profile.jpg',
-      },
       items: [
         {to: '/about', label: 'About me', position: 'left'},
         {

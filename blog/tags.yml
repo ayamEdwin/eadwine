@@ -1,19 +1,36 @@
-facebook:
-  label: Facebook
-  permalink: /facebook
-  description: Facebook tag description
-
-hello:
-  label: Hello
-  permalink: /hello
-  description: Hello tag description
-
-docusaurus:
-  label: Docusaurus
-  permalink: /docusaurus
-  description: Docusaurus tag description
-
-hola:
-  label: Hola
-  permalink: /hola
-  description: Hola tag description
+robotics:
+  label: Robotics
+  permalink: /robotics
+  description: Projects and reflections from robotics design, control, and automation.
+embedded:
+  label: Embedded Systems
+  permalink: /embedded
+  description: Firmware development, microcontrollers, and hardware-software integration.
+project:
+  label: Projects
+  permalink: /projects
+  description: Engineering projects, case studies, and hands-on development work.
+internship:
+  label: Internship
+  permalink: /internship
+  description: Industrial internship experiences and practical engineering learning.
+education:
+  label: Education
+  permalink: /education
+  description: Learning tools, curriculum innovations, and project-based teaching.
+sustainability:
+  label: Sustainability
+  permalink: /sustainability
+  description: Projects focused on environmental impact and sustainable designs.
+firmware:
+  label: Firmware
+  permalink: /firmware
+  description: Low-level code, control logic, and real-time embedded applications.
+api:
+  label: API
+  permalink: /api
+  description: Embedded APIs, software abstractions, and developer tools.
+teamwork:
+  label: Teamwork
+  permalink: /teamwork
+  description: Collaboration, leadership, and group engineering achievements.

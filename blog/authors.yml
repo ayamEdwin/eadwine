@@ -12,7 +12,7 @@ yangshun:
 
 slorber:
   name: Sébastien Lorber
-  title: Docusaurus maintainer
+  title: Technology storyteller
   url: https://sebastienlorber.com
   image_url: https://github.com/slorber.png
   page:
@@ -23,3 +23,12 @@ slorber:
     linkedin: sebastienlorber
     github: slorber
     newsletter: https://thisweekinreact.com
+
+edwin:
+  name: Edwin Setsoafia
+  title: Mechatronics Engineer
+  url: https://github.com/ayamEdwin
+  image_url: https://github.com/ayamEdwin.png
+  page: false
+  socials:
+    github: ayamEdwin

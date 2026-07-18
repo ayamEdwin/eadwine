@@ -1,33 +1,30 @@
 
 # The Fortress Visitor Log System (FVLS)
 
-Let's discover **DarkLight in less than 5 minutes**.
+During my internship with Fortress E&P Ghana, I supported the development of a Visitor Log System that helped improve entry control and record keeping for the company.
 
-## Getting Started
+## Internship Project Overview
 
-This two software tools will be your development and debugging environment.
+This project was part of a broader industrial attachment experience at Fortress Ghana. I worked closely with the team to develop a software-driven visitor management tool that captured visitor details, maintained records, and provided easy reporting for the facility.
 
-### What you'll need
-  - To get started with using the DarkLight APIs,
-    all that you need is listed dowm below:
+The internship also exposed me to practical robotics and mechanical design workflows, including prototype development for a mini-drone, battery charge circuit design, and ROV mount testing.
 
-## Software Requirements
+## What I contributed
 
-- **[Segger Embedded Studio](https://www.segger.com/downloads/embedded-studio)** fron Segger (Recommended IDE).
+- Assisted in the development and testing of the Fortress Visitor Log System, contributing to the frontend and backend workflow.
+- Supported the design and verification of a battery charger circuit used in small electronics test rigs.
+- Helped design a mini-drone using Fusion 360 for demonstration and R&D work.
+- Assisted in creating a mechanical mount for an ROV printed circuit board compartment.
+- Participated in the testing of ROV sensors and camera systems on fiber-optic interfaces.
 
-- **[J-Link Software](https://www.segger.com/downloads/jlink)** (For ST-Link Debugger Support).
+## Technologies and tools
 
+- Python programming for automation and support scripts.
+- Embedded systems tooling with hardware debugging via Segger J-Link.
+- CAD modeling using Fusion 360 for drone and ROV mount design.
+- Basic circuit design for charger modules and test electronics.
 
-## Hardware Requirements
+## Internship Impact
 
-- **STM-32** Microcontroller Development Board (The only DarkLight Compactible Board).
-
-- **ST-Link/V2 Debugger**.
-
-- USB cables for power and debugging. Check out the recommended **[Hardware Kit](https://www.google.com)**
-
-:::info Note
-To use the DarkLight API, ensure you have the above requirements satisfied,
-installed and successfully configured.
-:::
+This experience bridged academic knowledge with real industry practice, strengthening my confidence in multidisciplinary engineering. It helped me apply robotics, systems programming, and mechanical design skills to real workplace problems and improved my ability to work collaboratively in a technical team.
 

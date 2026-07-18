@@ -13,6 +13,7 @@ import React, { useState, useEffect } from 'react';
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   const profileImg = useBaseUrl('/img/eddie_profile.jpg');
+  const logoUrl = useBaseUrl('/img/logo.svg');
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className={styles.heroBackground}>
@@ -69,15 +70,27 @@ function HomepageHeader() {
             </div>
             
             <div className={styles.statsRow}>
-              <div className={styles.statItem}>
+              <div className={styles.experienceBlock}>
+                <img src={logoUrl} alt="Experience logo" className={styles.experienceLogo} />
+                <div>
+                  <div className={styles.experienceOverline}>Experience</div>
+                  <div className={styles.experienceText}>
+                    Experience through <strong>projects</strong>, <strong>industrial internships</strong>
+                  </div>
+                </div>
+              </div>
+              <div className={`${styles.statItem} ${styles.iconStat}`}>
+                <img src={logoUrl} alt="Internships logo" className={styles.statIcon} />
                 <span className={styles.statNumber}>2</span>
                 <span className={styles.statLabel}>Internships</span>
               </div>
-              <div className={styles.statItem}>
+              <div className={`${styles.statItem} ${styles.iconStat}`}>
+                <img src={logoUrl} alt="Projects logo" className={styles.statIcon} />
                 <span className={styles.statNumber}>5</span>
                 <span className={styles.statLabel}>Projects</span>
               </div>
-              <div className={styles.statItem}>
+              <div className={`${styles.statItem} ${styles.iconStat}`}>
+                <img src={logoUrl} alt="Mechatronics logo" className={styles.statIcon} />
                 <span className={styles.statNumber}>🎓</span>
                 <span className={styles.statLabel}>Mechatronics</span>
               </div>

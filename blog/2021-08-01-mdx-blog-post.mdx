@@ -1,24 +1,37 @@
 ---
-slug: mdx-blog-post
-title: MDX Blog Post
-authors: [slorber]
-tags: [docusaurus]
+slug: robotron-arm
+title: Robotron Arm — 4-DoF robotics design with vision-guided motion
+date: 2024-11-01
+authors: [edwin]
+tags: [robotics, project, design]
+description: A robotics course project combining 3D printed mechanics, inverse kinematics, and OpenCV-guided movement.
 ---
 
-Blog posts support [Docusaurus Markdown features](https://docusaurus.io/docs/markdown-features), such as [MDX](https://mdxjs.com/).
+The Robotron Arm is a 4-DoF pick-and-place manipulator with a Prismatic-Revolute-Revolute-Revolute (PRRR) configuration. As part of the MTR-323 Robotics coursework, our team designed this robot to provide an optimal balance between workspace, dexterity, and simplicity, allowing for precise and efficient movement of objects in a variety of applications such as collection of eggs in a battery cage poultry system, sorting of fruits for processing in industry, and more.
 
-:::tip
+Read the full project page here: [Robotron Arm project page](/eadwine/docs/academic-projects/03-robotic-arm).
 
-Use the power of React to create interactive blog posts.
+### Project Overview
 
-:::
+As part of the robotics coursework assessment, we were tasked with applying knowledge from the Robotics module. The objective was to design and manufacture a 4-DoF robotic arm for pick-and-place tasks while integrating a webcam as a sensor for robot perception using OpenCV Python.
 
-{/* truncate */}
+### Key Contributions
 
-For example, use JSX to create an interactive button:
+- **Mechanical Design**: Designed and 3D-printed the mechanical structure of the robotic arm using Autodesk Inventor Professional.
+- **Kinematics**: Collaborated with the team to compute inverse kinematics for the robot arm using link dimensions from CAD and physical model.
+- **Control Implementation**: Implemented the computed inverse kinematic algorithm on an Arduino Uno R3 using the Arduino IDE.
+- **Vision Integration**: Programmed the webcam using OpenCV's background subtraction libraries to determine object coordinates in 2D space and sent coordinate data to Arduino via UART.
 
-```js
-<button onClick={() => alert('button clicked!')}>Click me!</button>
-```
+### Technical Highlights
 
-<button onClick={() => alert('button clicked!')}>Click me!</button>
+- Refined the mechanical design after initial damaged links from haphazard motion during early tests.
+- Debugged and refactored both webcam interface code and Arduino code, integrating planned path algorithms.
+- Performed additive manufacturing of modeled parts using a Creality Ender V2 3D printer.
+- Performed motor calibrations to ensure motor angles stayed within desired range.
+- Extensively tested and refined the system before achieving the expected performance.
+
+### Outcome & Impact
+
+The Robotron project shaped our understanding of robotic manipulators and laid a foundation for future works. The design and construction demonstrated our ability to apply robotics theory from the classroom to a working prototype. This project taught valuable lessons about dedication, the importance of functionality over aesthetics in hardware design, and the inverse proportion between software and hardware design—poor hardware design requires software compensation for robustness.
+
+The Robotron continues to serve as a practical demonstrator of robotic manipulation principles in the curriculum.
