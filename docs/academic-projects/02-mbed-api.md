@@ -1,6 +1,6 @@
 # Custom Mbed
 ## Mbed Application Programming Interface (API)
-The retirement of the Mbed OS platform (https://os.mbed.com/) effective July 2026 created a critical gap in our embedded systems curriculum at
+The retirement of the Mbed OS platform [Mbed OS](https://os.mbed.com/) effective July 2026 created a critical gap in our embedded systems curriculum at
 Koforidua Technical University. The subsequent move to low-level STM32 programming (bare-metal, CMSIS, HAL)
 proved excessively difficult for sophomore engineering students, hindering their ability to engage with core course
 material effectively.
@@ -11,7 +11,7 @@ complexity for sophomore engineering students. I managed
 the full project lifecycle using Git/GitHub, delivering a tool that
 allowed students to prioritize application development over
 register configuration. The solution was later adopted by
-university staff, which is set to be scaled nationally under the name "DarkLight,"
+university staff, which is set to be scaled nationally as [DarkLight](https://www.darklightrts.com/),
 and will continue to aid embedded systems education across
 Ghana.
 
