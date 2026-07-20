@@ -15,7 +15,7 @@ Read the full project page here: [MTR-25 Crusher project page](/eadwine/docs/aca
 
 ### Key highlights
 
-- **Firmware Architecture**: Led firmware design and integration of event-triggered/time-triggered real-time control tasks on STM32F030 microcontroller.
+- **Firmware Architecture**: Led firmware design and integration of event-triggered/time-triggered real-time control tasks on the [ DarkLight Uhuru ](https://www.darklightrts.com/)on STM32F030 microcontroller.
 - **Motor Control**: Developed and tested PID control algorithms with real-time current feedback for crushing motor torque regulation.
 - **Safety Interlocks**: Designed and implemented safety interlocks including limit switch-based gate control with fault detection and emergency stops.
 - **Human-Machine Interface**: Built an HMI with LCD display, LEDs, and push buttons for intuitive user control.
@@ -26,7 +26,7 @@ Read the full project page here: [MTR-25 Crusher project page](/eadwine/docs/aca
 
 - Used STM32F030 microcontroller as the master controller coordinating motor and gate control with I2C communication.
 - Integrated a stepper motor for gate diverter with precision position control, error detection, and visual/audible alerts.
-- Employed Segger Embedded Studio with DarkLight APIs for efficient embedded development.
+- Employed Segger Embedded Studio with [DarkLight](https://www.darklightrts.com/) APIs for efficient embedded development.
 - Implemented soft start/stop, pulse operation modes, and automatic fault response with buzzer and LED indicators.
 
 ### Outcome & Impact

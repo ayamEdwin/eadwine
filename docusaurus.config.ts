@@ -114,16 +114,11 @@ const config: Config = {
           items: [
             {
               label: 'Discord',
-              href: 'https://www.google.com',
+              href: 'https://discord.com/users/1401522957024759954',
             },
             {
               label: 'LinkedIn',
-              href: 'https://www.linkedin.com',
-            },
-
-             {
-              label: 'Slack',
-              href: 'https://www.linkedin.com',
+              href: 'www.linkedin.com/in/edwin-setsoafia-5381b227a',
             },
 
              {
@@ -142,7 +137,7 @@ const config: Config = {
             },
             {
               label: 'Projects',
-              to: 'docs/projects',
+              to: 'docs/category/academic',
             },
             {
               label: 'Research',
@@ -155,7 +150,7 @@ const config: Config = {
           items: [
             {
               label: 'Email',
-              to: 'setsoafiaedwin7@gmail.com',
+              href: 'mailto:setsoafiaedwin7@gmail.com',
             },
           ],
         },
