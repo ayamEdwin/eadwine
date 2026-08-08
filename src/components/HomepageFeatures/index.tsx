@@ -37,7 +37,7 @@ const FeatureList: FeatureItem[] = [
         areas of robotics research; <code>Assistive robots</code>,
         <code>Human-robot interaction</code>, <code>manipulation and control</code>,
         <code>robot learning</code>, <code>perception</code>,<code>bio-inspiration</code>.
-        <Link to="/docs/hardware-guide/kit"> A comprehensive dive into my research interests can be found here</Link>
+        <Link to="/research"> A comprehensive dive into my research interests can be found here</Link>
       </>
     ),
   },
@@ -53,7 +53,7 @@ const FeatureList: FeatureItem[] = [
         and have given me valuable experience in the field of robotics and A.I research.
       This pages showcase my portfolio of projects, which includes a brief description of each project,
        the technologies used, and the outcomes achieved. 
-      <Link to="/docs/getting-started/installation-guide"> Checkout my projects here</Link>
+      <Link to="/docs/category/academic"> Checkout my projects here</Link>
           
  
       </>

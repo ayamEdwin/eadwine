@@ -251,7 +251,7 @@ I received my **Bachelor of Technology degree in Mechatronics engineering** from
    <code>Embedded Systems</code>           <code>Robotics</code>                   
 <code>Control Systems</code>  
 
-I am a builder at heart. I enjoy turning ideas into working systems by combining electronics, mechanics, and software. I believe meaningful engineering comes from curiosity, ownership, and continuous iteration. Whether I'm designing hardware, writing code, or debugging a prototype, I focus on creating solutions that are reliable, practical, and impactful.
+I am a builder at heart. I enjoy turning ideas into working systems by combining electronics, mechanics, and software. I believe meaningful engineering comes from curiosity, ownership, and continuous iteration. Whether I'm designing hardware, writing code, or debugging a prototype, I focus on creating solutions that are reliable, practical, and very impactful.
 
 </div>
 

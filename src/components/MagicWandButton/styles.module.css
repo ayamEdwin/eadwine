@@ -1,0 +1,82 @@
+.container {
+  position: fixed;
+  top: 1.25rem;
+  right: 1.5rem;
+  display: flex;
+  justify-content: flex-end;
+  pointer-events: none;
+  z-index: 100000;
+}
+
+.greetingCard {
+  position: relative;
+  pointer-events: auto;
+  background: linear-gradient(180deg, rgba(15, 24, 56, 0.98), rgba(7, 11, 23, 0.95));
+  border: 1px solid rgba(152, 167, 255, 0.16);
+  border-radius: 22px;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.55), inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+  padding: 1rem 1.2rem;
+  max-width: min(18rem, 90vw);
+  color: #edf2ff;
+  backdrop-filter: blur(18px);
+  overflow: hidden;
+}
+
+.greetingCard::before {
+  content: '';
+  position: absolute;
+  top: 0.65rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 4px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.14);
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.06);
+}
+
+.greetingCard::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle at top left, rgba(255, 255, 255, 0.06), transparent 30%), linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  opacity: 0.35;
+  pointer-events: none;
+}
+
+.greeting {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  position: relative;
+  z-index: 1;
+}
+
+.details {
+  margin: 0.35rem 0 0;
+  font-size: 0.82rem;
+  color: #cfd8ff;
+  line-height: 1.45;
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .container {
+    top: 0.9rem;
+    right: 0.9rem;
+  }
+
+  .greetingCard {
+    padding: 0.9rem 1rem;
+  }
+
+  .greeting {
+    font-size: 1rem;
+  }
+
+  .details {
+    font-size: 0.8rem;
+  }
+}
