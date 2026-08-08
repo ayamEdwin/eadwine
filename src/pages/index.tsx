@@ -45,7 +45,7 @@ function HomepageHeader() {
               <span className={styles.keyword}>  Robotics </span>, <span className={styles.keyword}>AI</span>, and 
               <span className={styles.keyword}> Embedded Systems</span>.
               <br/><br/>
-              Explore my projects, tutorials, and research in the exciting world of intelligent robots.
+              Explore my projects, ideas, and research in the exciting world of intelligent robots.
             </p>
             
             <div className={styles.buttonGroup}>
