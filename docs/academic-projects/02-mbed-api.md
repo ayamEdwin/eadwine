@@ -1,3 +1,8 @@
+---
+image: /img/mbed_code.png
+sidebar_custom_props:
+  image: /img/mbed_code.png
+---
 # Custom Mbed
 ## Mbed Application Programming Interface (API)
 The retirement of the [Mbed OS](https://os.mbed.com/) platform effective July 2026 created a critical gap in our embedded systems curriculum at

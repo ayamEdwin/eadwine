@@ -1,3 +1,8 @@
+---
+image: /img/digi_clock.png
+sidebar_custom_props:
+  image: /img/digi_clock.png
+---
 import eddieTeamImg from '@site/static/img/eddie_with_team_digi_clock.jpg';
 import eddieSolderingImg from '@site/static/img/eddie_soldering_ledstrip.jpg';
 import digiClockImg from '@site/static/img/digi_clock.png';

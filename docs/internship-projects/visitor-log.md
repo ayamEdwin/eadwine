@@ -1,5 +1,10 @@
 
 # The Fortress Visitor Log System (FVLS)
+---
+image: /img/f1.png
+sidebar_custom_props:
+	image: /img/f1.png
+---
 
 During my internship with Fortress E&P Ghana, I supported the development of a Visitor Log System that helped improve entry control and record keeping for the company. The project involved transforming a manual guest register into a software-based visitor management program that made check-ins more organized, searchable, and reliable.
 

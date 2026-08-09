@@ -1,4 +1,9 @@
 # Campus Robotics CAD Team Lead
+---
+image: /img/t1.jpg
+sidebar_custom_props:
+	image: /img/t1.jpg
+---
 
 In my second year, I served as the CAD team lead for the Campus Robotics Club. I supervised the mechanical design of a smart bin system showcased at an engineering fair held at Accra Technical University.
 

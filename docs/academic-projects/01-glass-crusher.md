@@ -1,3 +1,8 @@
+---
+image: /img/crusher.jpg
+sidebar_custom_props:
+  image: /img/crusher.jpg
+---
 import crusherImg from '@site/static/img/crusher.jpg'
 import crusher3d1Img from '@site/static/img/crusher-3d1.jpg'
 import crusher2dImg from '@site/static/img/crusher-2d.jpg'
