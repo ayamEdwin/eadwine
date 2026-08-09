@@ -1,6 +1,6 @@
 # Custom Mbed
 ## Mbed Application Programming Interface (API)
-The retirement of the Mbed OS platform [Mbed OS](https://os.mbed.com/) effective July 2026 created a critical gap in our embedded systems curriculum at
+The retirement of the [Mbed OS](https://os.mbed.com/) platform effective July 2026 created a critical gap in our embedded systems curriculum at
 Koforidua Technical University. The subsequent move to low-level STM32 programming (bare-metal, CMSIS, HAL)
 proved excessively difficult for sophomore engineering students, hindering their ability to engage with core course
 material effectively.
@@ -14,6 +14,7 @@ register configuration. The solution was later adopted by
 university staff, which is set to be scaled nationally as [DarkLight](https://www.darklightrts.com/),
 and will continue to aid embedded systems education across
 Ghana.
+![Retired Mbed Github Repo](/img/retired_mbed.png)
 
 ## API Implementation
 
@@ -32,3 +33,5 @@ The API is designed with a familiar interface similar to the **ARM Mbed** style 
 The API was customized for the **STM32F030RC6** microcontroller, a low-cost ARM Cortex-M0 device ideal for educational purposes. The hardware pinout was carefully designed to expose essential GPIO, ADC, UART, and timer peripherals while abstracting the complexities of register-level configuration.
 
 ![Mbed Pinout](/img/mbed_pinout.png)
+
+The API is made available on my github [mbed repo](https://github.com/ayamEdwin/mbed),

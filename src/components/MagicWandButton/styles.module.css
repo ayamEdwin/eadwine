@@ -1,11 +1,10 @@
 .container {
-  position: fixed;
-  top: 1.25rem;
-  right: 1.5rem;
+  position: static;
+  width: 100%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
   pointer-events: none;
-  z-index: 100000;
 }
 
 .greetingCard {
@@ -64,11 +63,17 @@
 
 @media (max-width: 768px) {
   .container {
-    top: 0.9rem;
-    right: 0.9rem;
+    top: auto;
+    left: auto;
+    right: auto;
+    transform: none;
+    width: 100%;
+    padding: 0 0.9rem;
   }
 
   .greetingCard {
+    width: 100%;
+    max-width: 100%;
     padding: 0.9rem 1rem;
   }
 

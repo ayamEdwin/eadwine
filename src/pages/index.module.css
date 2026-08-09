@@ -84,14 +84,22 @@
 .heroContent {
   position: relative;
   z-index: 1;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 400px);
+  grid-template-rows: auto auto;
   gap: 4rem;
   width: 100%;
+  align-items: start;
+}
+
+.heroGreeting {
+  grid-column: 2;
+  grid-row: 1;
 }
 
 .heroMain {
+  grid-column: 1;
+  grid-row: 1 / span 2;
   flex: 1;
   max-width: 650px;
 }
@@ -325,7 +333,10 @@
 .heroVisual {
   flex: 0 0 400px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.5rem;
 }
 
 .robotPreview {
@@ -415,8 +426,15 @@
   }
   
   .heroContent {
+    display: flex;
     flex-direction: column;
     text-align: center;
+  }
+
+  .heroGreeting {
+    order: -1;
+    width: 100%;
+    margin-bottom: 1.5rem;
   }
   
   .heroMain {

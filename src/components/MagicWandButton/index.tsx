@@ -16,7 +16,7 @@ function getTimeInfo(): TimeInfo {
     hour >= 12 && hour < 17 ? 'Good afternoon' :
     hour >= 17 && hour < 21 ? 'Good evening' :
     'Good night';
-  const emoji = hour >= 6 && hour < 18 ? '☀️' : '🌙';
+  const emoji = hour >= 17 || hour < 6 ? '🌙' : '☀️';
 
   const formatter = new Intl.DateTimeFormat(undefined, {
     hour: 'numeric',

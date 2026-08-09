@@ -122,7 +122,9 @@ const config: Config = {
             },
             {
               label: 'LinkedIn',
-              href: 'www.linkedin.com/in/edwin-setsoafia-5381b227a',
+              href: 'https://www.linkedin.com/in/edwin-setsoafia-5381b227a',
+              target: '_blank',
+              rel: 'noopener noreferrer',
             },
 
              {

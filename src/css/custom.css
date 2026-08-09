@@ -53,6 +53,12 @@
   color: var(--ifm-color-accent) !important;
 }
 
+/* Rounded images in docs content */
+.markdown img,
+article img {
+  border-radius: 12px;
+}
+
 /* Force dark theme appearance in light mode */
 :root {
   --ifm-background-color: #18181b;

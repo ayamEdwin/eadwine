@@ -282,7 +282,7 @@ I believe in a future where autonomous and intelligent robots will one day take 
 
 <li><Bot size={18} /><code>Assistive Robotics</code> : Developing robots to assist the physically challenged, elderly, and children</li>
 
-<li><Bot size={18} /><code>Colloborative Robotics</code> : Building robots that help people be better at their jobs through collaboration</li>
+<li><Bot size={18} /><code>Manipulation and Sensing</code> : Building robots that poses the capabilty to sense and make informed decisions in manipulation tasks</li>
 
 </ul>
 

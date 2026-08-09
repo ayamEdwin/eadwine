@@ -6,6 +6,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
+import MagicWandButton from '@site/src/components/MagicWandButton';
 
 import styles from './index.module.css';
 import React, { useState, useEffect } from 'react';
@@ -24,6 +25,9 @@ function HomepageHeader() {
       </div>
       <div className="container">
         <div className={styles.heroContent}>
+          <div className={styles.heroGreeting}>
+            <MagicWandButton />
+          </div>
           <div className={styles.heroMain}>
             <div className={styles.profileSection}>
               <img src={profileImg} alt="Edwin Setsoafia" className={styles.profileImg} />
@@ -45,7 +49,7 @@ function HomepageHeader() {
               <span className={styles.keyword}>  Robotics </span>, <span className={styles.keyword}>AI</span>, and 
               <span className={styles.keyword}> Embedded Systems</span>.
               <br/><br/>
-              Explore my projects, tutorials, and research in the exciting world of intelligent robots.
+              Explore my projects, ideas, and research in the exciting world of intelligent robots.
             </p>
             
             <div className={styles.buttonGroup}>

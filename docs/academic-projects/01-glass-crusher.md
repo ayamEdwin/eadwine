@@ -155,11 +155,11 @@ gate which controls the dual output feature of the crusher.
 
 ## Outcome & Impact
 1. Achieved functional prototype meeting all design
-objectives for user interface, motor control, and safety 2.
+objectives for user interface, motor control, and safety
 features.
 2. Provided scalable firmware framework with
 documented recommendations for RTOS integration,
-advanced sensor monitoring, and full automation 3.
+advanced sensor monitoring, and full automation
 potential.
 3. Enabled practical recycling innovation supporting
 environmental sustainability and local industry
