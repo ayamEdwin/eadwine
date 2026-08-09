@@ -1,9 +1,10 @@
-# 5V Linear Power Supply
 ---
 image: /img/power.jpeg
 sidebar_custom_props:
-	image: /img/power.jpeg
+  image: /img/power.jpeg
 ---
+
+# 5V Linear Power Supply
 
 This project grew from my Analogue Electronics I coursework and later became a practical personal design exercise. I designed and simulated a 5V linear power supply using Multisim, then recreated the design in KiCAD to improve my PCB layout and routing skills.
 

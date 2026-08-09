@@ -1,7 +1,44 @@
+import fs from 'fs';
+import path from 'path';
 import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
+const baseUrl = '/eadwine';
+
+function getLatestBlogPostLink() {
+  const blogDir = path.resolve(__dirname, 'blog');
+  const posts: Array<{date: Date; slug: string}> = [];
+
+  for (const entry of fs.readdirSync(blogDir, {withFileTypes: true})) {
+    if (entry.isFile()) {
+      const match = entry.name.match(/^(\d{4}-\d{2}-\d{2})-(.+)\.(md|mdx)$/);
+      if (match) {
+        const date = new Date(match[1]);
+        if (!Number.isNaN(date.getTime())) {
+          posts.push({date, slug: match[2]});
+        }
+      }
+    } else if (entry.isDirectory()) {
+      const match = entry.name.match(/^(\d{4}-\d{2}-\d{2})-(.+)$/);
+      if (match) {
+        const indexMd = path.join(blogDir, entry.name, 'index.md');
+        const indexMdx = path.join(blogDir, entry.name, 'index.mdx');
+        if (fs.existsSync(indexMd) || fs.existsSync(indexMdx)) {
+          const date = new Date(match[1]);
+          if (!Number.isNaN(date.getTime())) {
+            posts.push({date, slug: match[2]});
+          }
+        }
+      }
+    }
+  }
+
+  const latest = posts.sort((a, b) => b.date.getTime() - a.date.getTime())[0];
+  return latest ? `${baseUrl}/blog/${latest.slug}` : `${baseUrl}/blog`;
+}
+
+const latestBlogLink = getLatestBlogPostLink();
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
@@ -79,7 +116,7 @@ const config: Config = {
     announcementBar: {
       id: 'release-2025-11', // Increment this to show the banner again after users close it
       content:
-        '🎉 <strong>Exited to share this </strong> new milestone — <a href="/blog/2025-11-20-release">Check it out 🥳</a>!',
+        `🎉 <strong>Exited to share this </strong> new milestone — <a href="${latestBlogLink}">Check it out 🥳</a>!`,
       backgroundColor: '#18181b', // matches your dark background
       textColor: '#f5f5f7',       // matches your --ifm-color-content
       isCloseable: true,

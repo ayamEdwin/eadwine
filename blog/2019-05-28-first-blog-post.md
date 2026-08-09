@@ -11,7 +11,8 @@ The MTR-25 Crusher is the first portable glass-crushing system designed for loca
 
 Glass waste accumulates in landfills and poses environmental and safety challenges in Ghana and other urban areas. Our team designed a semi-automated Glass Crusher system to enhance recycling efficiency, incorporate robust motor control, and improve operator safety. Manual glass crushing is inefficient and hazardous for operators, and large-scale industrial crushers are costly and inaccessible to many local recycling SMEs. We aimed to develop a low-cost, reliable control system that improves crushing precision and safety, supporting local sustainable waste management and circular economy initiatives.
 
-Read the full project page here: [MTR-25 Crusher project page](/eadwine/docs/academic-projects/01-glass-crusher).
+Read the full project page here: [MTR-25 Crusher project page](/eadwine/docs/academic-projects/glass-crusher).
+
 
 ### Key highlights
 

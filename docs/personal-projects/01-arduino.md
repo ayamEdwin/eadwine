@@ -1,9 +1,10 @@
-# Custom Arduino Uno R3
 ---
 image: /img/Arduino%20Uno4.png
 sidebar_custom_props:
-	image: /img/Arduino%20Uno4.png
+  image: /img/Arduino%20Uno4.png
 ---
+
+# Custom Arduino Uno R3
 
 This project involved designing a clone of the Arduino Uno R3 board using KiCAD EDA. The goal was to apply PCB design and hardware engineering skills learned in coursework to build a reliable microcontroller development board.
 

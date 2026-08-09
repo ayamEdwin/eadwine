@@ -1,9 +1,10 @@
-# STEM Coach
 ---
 image: /img/eddie_profile.jpg
 sidebar_custom_props:
-	image: /img/eddie_profile.jpg
+  image: /img/eddie_profile.jpg
 ---
+
+# STEM Coach
 
 October 2025
 

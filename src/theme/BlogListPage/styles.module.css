@@ -1,0 +1,9 @@
+.blogListPage {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.blogListPage :global(.margin-bottom--xl) {
+  margin-bottom: 1rem !important;
+}
