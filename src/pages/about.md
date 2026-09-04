@@ -278,6 +278,8 @@ I believe in a future where autonomous and intelligent robots will one day take 
 
 <li><Bot size={18} /><code>Robot Perception</code> : Enabling robots to understand and interpret their environment through advanced sensors and computer vision</li>
 
+<li><Bot size={18} /><code>Bipedal Locomotion</code> : Enabling two legged robots with agile locomotion in uneven terrains  and dynamic environments.</li>
+
 <li><Bot size={18} /><code>Human-Robot Interaction</code> : Creating intuitive and natural interactions between humans and robots</li>
 
 <li><Bot size={18} /><code>Assistive Robotics</code> : Developing robots to assist the physically challenged, elderly, and children</li>

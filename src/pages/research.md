@@ -8,4 +8,7 @@ hide_table_of_contents: false
 
 A curated collection of my research papers, technical reports, and project documentation.
 
-Nothing here yet
+## Final Year Project Thesis
+
+[View Motor Control and Software Implementation for Glass Crusher Thesis](/pdf/MOTOR_CONTROL_REPORT.pdf)
+

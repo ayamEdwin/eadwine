@@ -36,7 +36,7 @@ const FeatureList: FeatureItem[] = [
         I find pleasure in but not limited to the following 
         areas of robotics research; <code>Assistive robots</code>,
         <code>Human-robot interaction</code>, <code>manipulation and control</code>,
-        <code>robot learning</code>, <code>perception</code>,<code>bio-inspiration</code>.
+        <code>robot learning and bipedal locomotion</code>, <code>perception</code>.
         <Link to="/research"> A comprehensive dive into my research interests can be found here</Link>
       </>
     ),
