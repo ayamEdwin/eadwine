@@ -133,6 +133,7 @@ const config: Config = {
           position: 'left',
           label: 'Projects',
         },
+        {to: '/docs/awards-and-certifications', label: 'Awards & Certifications', position: 'left'},
         {to: '/research', label: 'Research', position: 'left'},
         {to: '/blog', label: 'Blog', position: 'left'},
       ],

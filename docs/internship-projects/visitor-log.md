@@ -25,19 +25,24 @@ The internship also exposed me to practical robotics and mechanical design workf
 |---|---|
 | ![Fortress Visitor Log screenshot 1](/img/f1.png) | ![Fortress Visitor Log screenshot 3](/img/f3.png) |
 
-![Fortress Visitor Log screenshot 7](/img/f7.png)
-
 
 ## What I contributed
 
 - Assisted in the development and testing of the Fortress Visitor Log System, contributing to the frontend and backend workflow.
+![Fortress Visitor Log screenshot 7](/img/f7.png)
+
 - Supported the design and verification of a battery charger circuit used in small electronics test rigs.
-- Assisted in creating a mechanical mount for an ROV printed circuit board compartment.
-- Participated in the testing of ROV sensors and camera systems on fiber-optic interfaces.
+![Battery Circuitary](/img/f5.jpg)
 
-![Fortress Visitor Log screenshot 5](/img/f5.jpg)
+- Assisted in creating a mechanical mount for an ROV printed circuit board sub-system compartment for assembly into the larger ROV system.
+![Fortress Visitor Log screenshot 6](/img/f6.png)
 
 
+- Participated in the testing of ROV sonar/depth sensors, multiplexers and camera systems on server-based fiber-optic interfaces.
+
+| ![ROV Components](/img/fg3.jpg) | ![ROV Components](/img/fg2.jpg) |
+| --- | --- |
+| ![ROV Components](/img/fg1.jpg)
 
 ## Technologies and tools
 
@@ -50,6 +55,5 @@ The internship also exposed me to practical robotics and mechanical design workf
 ## Internship Impact
 
 This experience bridged academic knowledge with real industry practice, strengthening my confidence in multidisciplinary engineering. It helped me apply robotics, systems programming, and mechanical design skills to real workplace problems and improved my ability to work collaboratively within a technical team.
-![Fortress Visitor Log screenshot 6](/img/f6.png)
-
+![Graduate and Student Intern Team](/img/fg4.jpg)
 
