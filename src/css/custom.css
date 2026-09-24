@@ -102,17 +102,16 @@ body::before {
     right: auto !important;
     width: min(85vw, 420px) !important;
     height: 100vh !important;
-    transform: translate3d(0, 0, 0) !important;
     box-shadow: 0 30px 80px rgba(2, 6, 23, 0.6);
     background: rgba(7, 17, 29, 0.98);
   }
 
   .navbar-sidebar__items {
-    transform: translate3d(0, 0, 0) !important;
+    z-index: 1;
   }
 
   .navbar-sidebar__items--show-secondary {
-    transform: translate3d(0, 0, 0) !important;
+    transform: translate3d(calc(var(--ifm-navbar-sidebar-width) * -1), 0, 0) !important;
   }
 
   .navbar-sidebar__item {

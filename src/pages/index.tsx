@@ -30,7 +30,14 @@ function HomepageHeader() {
           </div>
           <div className={styles.heroMain}>
             <div className={styles.profileSection}>
-              <img src={profileImg} alt="Edwin Setsoafia" className={styles.profileImg} />
+              <img
+                src={profileImg}
+                alt="Edwin Setsoafia"
+                className={styles.profileImg}
+                loading="eager"
+                decoding="async"
+                fetchPriority="high"
+              />
               <div className={styles.statusBadge}>
                 <span className={styles.statusDot}></span>
                 Available for research colloborations
@@ -130,7 +137,13 @@ function CarouselImages() {
             key={i} 
             className={`${styles.carouselSlide} ${i === index ? styles.active : ''}`}
           >
-            <img src={img.src} alt={img.alt} className={styles.carouselImg} />
+            <img
+              src={img.src}
+              alt={img.alt}
+              className={styles.carouselImg}
+              loading="lazy"
+              decoding="async"
+            />
             <div className={styles.imageLabel}>{img.label}</div>
           </div>
         ))}

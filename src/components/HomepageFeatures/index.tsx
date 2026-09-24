@@ -66,7 +66,14 @@ function Feature({title, Svg, description}: FeatureItem) {
     <div className={clsx('col col--4', styles.featureCard)}>
       <div className="text--center">
         {typeof Svg === 'string' ? (
-          <img src={Svg} className={styles.featureSvg} role="img" alt={title} />
+          <img
+            src={Svg}
+            className={styles.featureSvg}
+            role="img"
+            alt={title}
+            loading="lazy"
+            decoding="async"
+          />
         ) : (
           <Svg className={styles.featureSvg} role="img" />
         )}

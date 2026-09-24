@@ -229,9 +229,9 @@ import {
 
 <div className="profile-container">
 
-<img src={EddieProfile} alt="Eddie Profile" className="profile-img" style={{width: '250px', height: '250px', borderRadius: '20px', objectFit: 'cover'}} />
+<img src={EddieProfile} alt="Eddie Profile" className="profile-img" style={{width: '250px', height: '250px', borderRadius: '20px', objectFit: 'cover'}} loading="lazy" decoding="async" />
 
-<img src={EddieSoldering} alt="Eddie Soldering" className="profile-img" style={{width: '200px', height: '200px', borderRadius: '20px', objectFit: 'cover'}} />
+<img src={EddieSoldering} alt="Eddie Soldering" className="profile-img" style={{width: '200px', height: '200px', borderRadius: '20px', objectFit: 'cover'}} loading="lazy" decoding="async" />
 
 </div>
 
