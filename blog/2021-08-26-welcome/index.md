@@ -9,6 +9,8 @@ description: A product development course project showcasing embedded system des
 
 The Digital Clock Prototype was developed as a core assessment for the Product Development Course, demonstrating the full lifecycle of creating an embedded system. Leading a team of five mechatronics students, I coordinated the firmware development using the Mbed OS framework—specifically leveraging Timer and Ticker APIs—to program an NXP KL25Z development board powered by an ARM Cortex-M0+ processor.
 
+{/* truncate */}
+
 Read the full project page here: [Digital Clock project page](/eadwine/docs/academic-projects/04-digital-clock).
 
 ### Project Scope

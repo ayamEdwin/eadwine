@@ -9,6 +9,8 @@ description: An industrial internship project demonstrating a visitor log system
 
 My internship at Fortress E&P Ghana (October–December 2024) was a highly rewarding experience that allowed me to develop practical skills in web development, robotics, mechanical design, and teamwork through diverse and challenging projects. Despite initial challenges due to the absence of key personnel, the supportive workplace environment and collaborative efforts of the team ensured I could overcome these hurdles and contribute meaningfully to the projects.
 
+{/* truncate */}
+
 Read the full project page here: [Fortress Visitor Log System project page](/eadwine/docs/internship-projects/visitor-log).
 
 ### Internship Overview
