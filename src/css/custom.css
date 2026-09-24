@@ -89,6 +89,37 @@ body::before {
   box-shadow: 0 10px 30px rgba(2, 6, 23, 0.15);
 }
 
+@media (max-width: 996px) {
+  .navbar-sidebar__backdrop {
+    z-index: 999 !important;
+  }
+
+  .navbar-sidebar {
+    z-index: 1000 !important;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: auto !important;
+    width: min(85vw, 420px) !important;
+    height: 100vh !important;
+    transform: translate3d(0, 0, 0) !important;
+    box-shadow: 0 30px 80px rgba(2, 6, 23, 0.6);
+    background: rgba(7, 17, 29, 0.98);
+  }
+
+  .navbar-sidebar__items {
+    transform: translate3d(0, 0, 0) !important;
+  }
+
+  .navbar-sidebar__items--show-secondary {
+    transform: translate3d(0, 0, 0) !important;
+  }
+
+  .navbar-sidebar__item {
+    width: 100% !important;
+  }
+}
+
 .navbar__link:hover,
 .navbar__link--active {
   color: var(--ifm-color-accent-light) !important;

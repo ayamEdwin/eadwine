@@ -30,8 +30,8 @@ Legged locomotion, safety, and interaction between humans and robots are the int
   <div>
     <div style={{ position: 'relative', overflow: 'hidden', borderRadius: '12px', aspectRatio: '16 / 9', boxShadow: '0 8px 24px rgba(0,0,0,0.08)' }}>
       <iframe
-        src="https://www.youtube.com/embed/L7i_KE5z_GY?autoplay=1&mute=1&loop=1&playlist=L7i_KE5z_GY&controls=0&rel=0&playsinline=1"
-        title="Unitree robot falling during real-world locomotion"
+        src="https://www.youtube.com/embed/8Drm_v3_iG4?autoplay=1&mute=1&loop=1&playlist=8Drm_v3_iG4&controls=0&rel=0&playsinline=1"
+        title="Provided YouTube Shorts video"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowFullScreen
         referrerPolicy="strict-origin-when-cross-origin"

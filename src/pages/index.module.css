@@ -327,16 +327,21 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  max-width: 100%;
+  overflow: visible;
   animation: fadeUp 1s ease-out 0.12s both;
 }
 
 .robotPreview {
   width: 100%;
+  max-width: 100%;
   border-radius: 24px;
   background: linear-gradient(180deg, rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.4));
   border: 1px solid rgba(125, 211, 252, 0.14);
   box-shadow: 0 24px 70px rgba(15, 23, 42, 0.45);
   padding: 1rem;
+  overflow: visible;
   backdrop-filter: blur(12px);
   transition: transform 0.35s ease;
 }
@@ -347,10 +352,11 @@
 
 .carouselContainer {
   position: relative;
-  width: 100%;
-  max-width: 420px;
-  height: 360px;
+  width: min(100%, 420px);
+  max-width: 100%;
+  height: clamp(220px, 52vw, 360px);
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .carouselTrack {
@@ -472,9 +478,9 @@
   }
   
   .carouselContainer {
-    width: 100%;
-    max-width: 500px;
-    height: 500px;
+    width: min(88vw, 500px);
+    max-width: 100%;
+    height: clamp(260px, 68vw, 500px);
   }
   
   .carouselImg {
@@ -502,9 +508,9 @@
     width: 100%;
   }
   .carouselContainer {
-    width: 90vw;
-    max-width: 380px;
-    height: 380px;
+    width: min(88vw, 380px);
+    max-width: 100%;
+    height: clamp(220px, 62vw, 380px);
     margin: 0 auto;
   }
   .carouselImg {
@@ -514,8 +520,8 @@
 
 @media screen and (max-width: 480px) {
   .carouselContainer {
-    width: 95vw;
-    max-width: 340px;
-    height: 340px;
+    width: min(92vw, 340px);
+    max-width: 100%;
+    height: clamp(190px, 57vw, 340px);
   }
 }
