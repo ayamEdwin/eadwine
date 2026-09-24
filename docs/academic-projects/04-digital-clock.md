@@ -6,6 +6,10 @@ sidebar_custom_props:
 import eddieTeamImg from '@site/static/img/eddie_with_team_digi_clock.jpg';
 import eddieSolderingImg from '@site/static/img/eddie_soldering_ledstrip.jpg';
 import digiClockImg from '@site/static/img/digi_clock.png';
+import dc1Img from '@site/static/img/dc1.jpg';
+import dc2Img from '@site/static/img/dc2.jpg';
+import dc3Img from '@site/static/img/dc3.jpg';
+import dc4Img from '@site/static/img/dc4.jpg';
 
 # Digital Clock
 ## Project Lead : Digital Clock Prototype – Year Two (2)
@@ -28,6 +32,10 @@ This is Me, in white leading my team to troubleshoot an electrical issue on the 
 <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '1rem', marginTop: '1rem' }}>
   <img src={eddieSolderingImg} alt="Eddie soldering" style={{ maxWidth: '100%', width: 'calc(50% - 0.5rem)', height: 'auto', borderRadius: '1rem' }} />
   <img src={digiClockImg} alt="Digital Clock" style={{ maxWidth: '100%', width: 'calc(50% - 0.5rem)', height: 'auto', borderRadius: '1rem' }} />
+  <img src={dc1Img} alt="Digital Clock DC1" style={{ maxWidth: '100%', width: 'calc(50% - 0.5rem)', height: 'auto', borderRadius: '1rem' }} />
+  <img src={dc2Img} alt="Digital Clock DC2" style={{ maxWidth: '100%', width: 'calc(50% - 0.5rem)', height: 'auto', borderRadius: '1rem' }} />
+  <img src={dc3Img} alt="Digital Clock DC3" style={{ maxWidth: '100%', width: 'calc(50% - 0.5rem)', height: 'auto', borderRadius: '1rem' }} />
+  <img src={dc4Img} alt="Digital Clock DC4" style={{ maxWidth: '100%', width: 'calc(50% - 0.5rem)', height: 'auto', borderRadius: '1rem' }} />
 </div>
 
 

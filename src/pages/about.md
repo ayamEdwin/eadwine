@@ -243,7 +243,7 @@ import {
 
 <div className="highlight-text">
 
-Hello there! I'm **Edwin Setsoafia**, a Mechatronics engineering graduate passionate about **Robotics and Artificial Intelligence (AI) research**.
+Hello there! My name is **Edwin Setsoafia**, I'm a Mechatronics engineering graduate who is passionate about **Robotics and Physical AI research**.
 
 I received my **Bachelor of Technology degree in Mechatronics engineering** from Koforidua Technical University, Ghana. My background in mechatronics has enriched my engineering skills in the diverse fields of:
 
@@ -280,11 +280,10 @@ I believe in a future where autonomous and intelligent robots will one day take 
 
 <li><Bot size={18} /><code>Bipedal Locomotion</code> : Enabling two legged robots with agile locomotion in uneven terrains  and dynamic environments.</li>
 
-<li><Bot size={18} /><code>Human-Robot Interaction</code> : Creating intuitive and natural interactions between humans and robots</li>
+<li><Bot size={18} /><code>Human-Robot Interaction</code> : Creating intuitive, natural and safe interactions between humans and robots</li>
 
-<li><Bot size={18} /><code>Assistive Robotics</code> : Developing robots to assist the physically challenged, elderly, and children</li>
-
-<li><Bot size={18} /><code>Manipulation and Sensing</code> : Building robots that poses the capabilty to sense and make informed decisions in manipulation tasks</li>
+## Applications
+<li><Bot size={18} /><code>Assistive Robotics</code> : Developing robots to assist the physically challenged, elderly, and children in homes and hospitals and to colloborate safely with human counterparts at work.</li>
 
 </ul>
 

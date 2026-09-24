@@ -34,9 +34,9 @@ const FeatureList: FeatureItem[] = [
       <>
         With the sole aim of assisting humans with robots,
         I find pleasure in but not limited to the following 
-        areas of robotics research; <code>Assistive robots</code>,
-        <code>Human-robot interaction</code>, <code>manipulation and control</code>,
-        <code>robot learning and bipedal locomotion</code>, <code>perception</code>.
+        areas of robotics research; <code>Human-robot interaction</code>,
+        <code>robot learning and bipedal locomotion</code> and <code>robot perception</code> with applications 
+        in <code>Assistive humanoid robots</code>, in both industry, healthcare and domestic settings.
         <Link to="/research"> A comprehensive dive into my research interests can be found here</Link>
       </>
     ),
@@ -63,7 +63,7 @@ const FeatureList: FeatureItem[] = [
 
 function Feature({title, Svg, description}: FeatureItem) {
   return (
-    <div className={clsx('col col--4')}>
+    <div className={clsx('col col--4', styles.featureCard)}>
       <div className="text--center">
         {typeof Svg === 'string' ? (
           <img src={Svg} className={styles.featureSvg} role="img" alt={title} />

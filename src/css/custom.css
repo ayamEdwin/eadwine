@@ -4,71 +4,128 @@
  * work well for content-centric websites.
  */
 
-/* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #18181b; /* Jet Black */
-  --ifm-color-primary-dark: #121214;
-  --ifm-color-primary-darker: #0d0d0f;
-  --ifm-color-primary-darkest: #000000;
-  --ifm-color-primary-light: #23232a;
-  --ifm-color-primary-lighter: #23232a;
-  --ifm-color-primary-lightest: #23232a;
-  --ifm-color-accent: #e7b86a; /* Gold accent */
-  --ifm-color-accent-dark: #b08d57;
-  --ifm-background-surface-color: #18181b;
-  --ifm-background-gradient: linear-gradient(135deg, #23232a 0%, #18181b 100%);
-  --ifm-color-content: #f5f5f7;
-  --ifm-color-emphasis-200: #23232a;
-  --ifm-link-color: #e7b86a;
-  --ifm-link-hover-color: #fffbe6;
+  --ifm-color-primary: #0f172a;
+  --ifm-color-primary-dark: #0b1220;
+  --ifm-color-primary-darker: #070d18;
+  --ifm-color-primary-darkest: #02070d;
+  --ifm-color-primary-light: #1d2b45;
+  --ifm-color-primary-lighter: #23314b;
+  --ifm-color-primary-lightest: #304c76;
+  --ifm-color-accent: #7dd3fc;
+  --ifm-color-accent-dark: #38bdf8;
+  --ifm-color-accent-light: #bae6fd;
+  --ifm-background-surface-color: rgba(15, 23, 42, 0.82);
+  --ifm-background-gradient: radial-gradient(circle at top left, rgba(56, 189, 248, 0.18), transparent 28%), radial-gradient(circle at bottom right, rgba(168, 85, 247, 0.22), transparent 32%), linear-gradient(135deg, #020817 0%, #0b1220 35%, #111827 100%);
+  --ifm-color-content: #e5eefb;
+  --ifm-color-emphasis-200: #172033;
+  --ifm-link-color: #7dd3fc;
+  --ifm-link-hover-color: #e0f2fe;
   --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(231, 184, 106, 0.07);
+  --ifm-card-background-color: rgba(15, 23, 42, 0.72);
+  --ifm-navbar-background-color: rgba(7, 17, 29, 0.72);
+  --ifm-footer-background-color: rgba(7, 17, 29, 0.9);
+  --ifm-toc-border-color: rgba(148, 163, 184, 0.18);
+  --ifm-color-emphasis-300: rgba(148, 163, 184, 0.18);
+  --ifm-hr-border-color: rgba(148, 163, 184, 0.18);
+  --docusaurus-highlighted-code-line-bg: rgba(125, 211, 252, 0.08);
+  color-scheme: dark;
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #18181b;
-  --ifm-color-primary-dark: #121214;
-  --ifm-color-primary-darker: #0d0d0f;
-  --ifm-color-primary-darkest: #000000;
-  --ifm-color-primary-light: #23232a;
-  --ifm-color-primary-lighter: #23232a;
-  --ifm-color-primary-lightest: #23232a;
-  --ifm-color-accent: #e7b86a;
-  --ifm-color-accent-dark: #b08d57;
-  --ifm-background-surface-color: #18181b;
-  --ifm-background-gradient: linear-gradient(135deg, #23232a 0%, #18181b 100%);
-  --ifm-color-content: #f5f5f7;
-  --ifm-color-emphasis-200: #23232a;
-  --ifm-link-color: #e7b86a;
-  --ifm-link-hover-color: #fffbe6;
-  --docusaurus-highlighted-code-line-bg: rgba(231, 184, 106, 0.07);
+  --ifm-color-primary: #0f172a;
+  --ifm-color-primary-dark: #0b1220;
+  --ifm-color-primary-darker: #070d18;
+  --ifm-color-primary-darkest: #02070d;
+  --ifm-color-primary-light: #1d2b45;
+  --ifm-color-primary-lighter: #23314b;
+  --ifm-color-primary-lightest: #304c76;
+  --ifm-color-accent: #7dd3fc;
+  --ifm-color-accent-dark: #38bdf8;
+  --ifm-color-accent-light: #bae6fd;
+  --ifm-background-color: #07111d;
+  --ifm-background-surface-color: rgba(15, 23, 42, 0.82);
+  --ifm-background-gradient: radial-gradient(circle at top left, rgba(56, 189, 248, 0.18), transparent 28%), radial-gradient(circle at bottom right, rgba(168, 85, 247, 0.22), transparent 32%), linear-gradient(135deg, #020817 0%, #0b1220 35%, #111827 100%);
+  --ifm-color-content: #e5eefb;
+  --ifm-color-emphasis-200: #172033;
+  --ifm-link-color: #7dd3fc;
+  --ifm-link-hover-color: #e0f2fe;
+  --ifm-card-background-color: rgba(15, 23, 42, 0.72);
+  --ifm-navbar-background-color: rgba(7, 17, 29, 0.72);
+  --ifm-footer-background-color: rgba(7, 17, 29, 0.9);
+  --docusaurus-highlighted-code-line-bg: rgba(125, 211, 252, 0.08);
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
+body {
+  background: var(--ifm-background-gradient);
+  background-attachment: fixed;
+  color: var(--ifm-color-content);
+}
 
-/* Navbar link hover & active color */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(circle at 15% 20%, rgba(125, 211, 252, 0.14), transparent 18%),
+    radial-gradient(circle at 80% 10%, rgba(196, 181, 253, 0.12), transparent 22%),
+    radial-gradient(circle at 45% 80%, rgba(59, 130, 246, 0.10), transparent 18%);
+  pointer-events: none;
+  z-index: -1;
+}
+
+.main-wrapper {
+  min-height: 100vh;
+}
+
+.navbar {
+  background: rgba(7, 17, 29, 0.72);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(148, 163, 184, 0.14);
+  box-shadow: 0 10px 30px rgba(2, 6, 23, 0.15);
+}
+
 .navbar__link:hover,
 .navbar__link--active {
-  color: var(--ifm-color-accent) !important;
+  color: var(--ifm-color-accent-light) !important;
+  transform: translateY(-1px);
 }
 
-/* Rounded images in docs content */
 .markdown img,
-article img {
-  border-radius: 12px;
+article img,
+img {
+  border-radius: 16px;
 }
 
-/* Force dark theme appearance in light mode */
-:root {
-  --ifm-background-color: #18181b;
-  --ifm-navbar-background-color: #18181b;
-  --ifm-footer-background-color: #18181b;
-  --ifm-card-background-color: #23232a;
-  --ifm-toc-border-color: #23232a;
-  --ifm-color-emphasis-300: #23232a;
-  --ifm-hr-border-color: #23232a;
-  color-scheme: dark;
+.card,
+.theme-doc-markdown .card,
+.pagination-nav__item {
+  background: rgba(15, 23, 42, 0.7);
+  border: 1px solid rgba(148, 163, 184, 0.14);
+  box-shadow: 0 20px 45px rgba(14, 165, 233, 0.14);
+  border-radius: 18px;
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover,
+.theme-doc-markdown .card:hover,
+.pagination-nav__item:hover {
+  transform: translateY(-4px);
+  border-color: rgba(125, 211, 252, 0.5);
+  box-shadow: 0 18px 40px rgba(59, 130, 246, 0.16);
+}
+
+.footer {
+  border-top: 1px solid rgba(148,163,184,0.12);
+  background: rgba(7,17,29,0.8);
+}
+
+.container {
+  max-width: 1200px;
 }
 
 
