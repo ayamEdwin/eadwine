@@ -1,5 +1,8 @@
 .carousel {
-  margin: 1.5rem 0;
+  width: 100%;
+  max-width: 54rem;
+  margin: 1.5rem auto;
+  text-align: left;
 }
 
 .frame {
@@ -28,16 +31,19 @@
 }
 
 .caption {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: start;
   gap: 1rem;
   margin-top: 0.75rem;
 }
 
 .caption h3 {
+  min-width: 0;
   margin: 0;
   font-size: 1rem;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
 }
 
 .caption span {
